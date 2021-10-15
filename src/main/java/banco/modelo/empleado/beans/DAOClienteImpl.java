@@ -1,9 +1,6 @@
 package banco.modelo.empleado.beans;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,21 +26,39 @@ public class DAOClienteImpl implements DAOCliente {
 		 * TODO Recuperar el cliente que tenga un documento que se corresponda con los parámetros recibidos.  
 		 *		Deberá generar o propagar una excepción si no existe dicho cliente o hay un error de conexión.		
 		 */
-		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		
+
+		String sql = "SELECT * FROM cliente WHERE tipo_doc LIKE '" + tipoDoc + "' AND nro_doc = " + nroDoc;
+
+		logger.info("sql: {}", sql);
+
 		ClienteBean cliente = new ClienteBeanImpl();
-		cliente.setNroCliente(3);
-		cliente.setApellido("Apellido3");
-		cliente.setNombre("Nombre3");
-		cliente.setTipoDocumento("DNI");
-		cliente.setNroDocumento(3);
-		cliente.setDireccion("Direccion3");
-		cliente.setTelefono("0291-3333333");
-		cliente.setFechaNacimiento(Fechas.convertirStringADate("1983-03-03","13:30:00"));
-		
+
+		try{
+
+			Statement select = conexion.createStatement();
+			ResultSet rs = select.executeQuery(sql);
+
+			while(rs.next()){
+
+				logger.info("Se recuperó cliente que coincide.");
+
+				cliente.setNroCliente(rs.getInt("nro_cliente"));
+				cliente.setApellido(rs.getString("apellido"));
+				cliente.setNombre(rs.getString("nombre"));
+				cliente.setTipoDocumento(rs.getString("tipo_doc"));
+				cliente.setNroDocumento(rs.getInt("nro_doc"));
+				cliente.setDireccion(rs.getString("direccion"));
+				cliente.setTelefono(rs.getString("telefono"));
+				cliente.setFechaNacimiento(rs.getDate("fecha_nac"));
+			}
+
+		} catch (SQLException ex){
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error inesperado al recuperar cliente de la B.D.");
+		}
+
 		return cliente;		
 
 	}
