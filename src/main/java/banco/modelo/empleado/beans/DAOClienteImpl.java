@@ -71,23 +71,40 @@ public class DAOClienteImpl implements DAOCliente {
 		 * TODO Recuperar el cliente que tenga un número de cliente de acuerdo al parámetro recibido.  
 		 *		Deberá generar o propagar una excepción si no existe dicho cliente o hay un error de conexión.		
 		 */
-		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		
+
+		String sql = "SELECT * FROM cliente WHERE nro_cliente = " + nroCliente;
+
+		logger.info("sql: {}", sql);
+
 		ClienteBean cliente = new ClienteBeanImpl();
-		cliente.setNroCliente(3);
-		cliente.setApellido("Apellido3");
-		cliente.setNombre("Nombre3");
-		cliente.setTipoDocumento("DNI");
-		cliente.setNroDocumento(3);
-		cliente.setDireccion("Direccion3");
-		cliente.setTelefono("0291-3333333");
-		cliente.setFechaNacimiento(Fechas.convertirStringADate("1983-03-03","13:30:00"));
-		
-		return cliente;		
-		// Fin datos estáticos de prueba.
+
+		try{
+
+			Statement select = conexion.createStatement();
+			ResultSet rs = select.executeQuery(sql);
+
+			while(rs.next()){
+
+				logger.info("Se recuperó cliente que coincide.");
+
+				cliente.setNroCliente(rs.getInt("nro_cliente"));
+				cliente.setApellido(rs.getString("apellido"));
+				cliente.setNombre(rs.getString("nombre"));
+				cliente.setTipoDocumento(rs.getString("tipo_doc"));
+				cliente.setNroDocumento(rs.getInt("nro_doc"));
+				cliente.setDireccion(rs.getString("direccion"));
+				cliente.setTelefono(rs.getString("telefono"));
+				cliente.setFechaNacimiento(rs.getDate("fecha_nac"));
+			}
+
+		} catch (SQLException ex){
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error inesperado al recuperar cliente de la B.D.");
+		}
+
+		return cliente;
 
 	}
 
