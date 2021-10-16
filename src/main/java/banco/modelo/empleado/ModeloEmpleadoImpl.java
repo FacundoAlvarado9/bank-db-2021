@@ -2,6 +2,7 @@ package banco.modelo.empleado;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,8 @@ import banco.modelo.empleado.beans.EmpleadoBean;
 import banco.modelo.empleado.beans.PagoBean;
 import banco.modelo.empleado.beans.PrestamoBean;
 
+import javax.xml.transform.Result;
+
 public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 
 	private static Logger logger = LoggerFactory.getLogger(ModeloEmpleadoImpl.class);	
@@ -48,13 +51,26 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		 *      Si la autenticación no es exitosa porque el legajo no es válido o el password es incorrecto
 		 *      deberá retornar falso y si hubo algún otro error deberá producir una excepción.
 		 */
-		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		this.legajo = 1;
-		return true;
-		// Fin datos estáticos de prueba.
+
+		boolean resul_autenticacion = false;
+
+		try {
+
+			ResultSet rs = this.consulta("SELECT legajo FROM empleado WHERE legajo = " + Integer.parseInt(legajo) + " AND password=md5('" + password + "'");
+
+			while (rs.next()) { //Si hay resultados, entonces coincide legajo y password.
+				resul_autenticacion = true; //Resultó exitosa la autenticación
+				this.legajo = rs.getInt("legajo"); //seteo el legajo
+			}
+
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar empleado de la BD.");
+		}
+
+		return resul_autenticacion;
 	}
 	
 	@Override
