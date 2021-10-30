@@ -5,7 +5,9 @@ import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Properties;
@@ -186,69 +188,57 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 * 		Debe generar excepción sin las fechas son erroneas (ver descripción en interface)
 		 */
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.
-		 * 
-		+------------+----------+---------------+---------+----------+---------+
-		| fecha      | hora     | tipo          | monto   | cod_caja | destino |
-		+------------+----------+---------------+---------+----------+---------+
-		| 2021-09-16 | 11:10:00 | transferencia | -700.00 |       18 |      32 |
-		| 2021-09-15 | 17:20:00 | extraccion    | -200.00 |        2 |    NULL |
-		| 2021-09-14 | 09:03:00 | deposito      | 1600.00 |        2 |    NULL |
-		| 2021-09-13 | 13:30:00 | debito        |  -50.00 |     NULL |    NULL |
-		| 2021-09-12 | 15:00:00 | transferencia | -400.00 |       41 |       7 |
-		+------------+----------+---------------+---------+----------+---------+
- 		 */
+		
+		String fechaIni="",fechaFin="";
+		
+		//Valido las fechas y las convierto a un formato que entienda SQL.
+		fechaIni=validarFecha(desde);
+		fechaFin=validarFecha(hasta);
 		
 		ArrayList<TransaccionCajaAhorroBean> lista = new ArrayList<TransaccionCajaAhorroBean>();
 		
-		
-		
-		TransaccionCajaAhorroBean fila1 = new TransaccionCajaAhorroBeanImpl();
-		fila1.setTransaccionFechaHora(Fechas.convertirStringADate("2021-09-16","11:10:00"));
-		fila1.setTransaccionTipo("transferencia");
-		fila1.setTransaccionMonto(-700.00);
-		fila1.setTransaccionCodigoCaja(18);
-		fila1.setCajaAhorroDestinoNumero(32);
-		lista.add(fila1);
+		TransaccionCajaAhorroBean filaNueva;
+		try {
+			//Obtengp todas los movimientos del cliente entre ambas fechas
+			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro  WHERE nro_cliente="+cliente+" and TIMEDIFF('"+fechaFin+"',fecha)>'00-00-00' AND TIMEDIFF('"+fechaIni+"',fecha)<0");
 
-		TransaccionCajaAhorroBean fila2 = new TransaccionCajaAhorroBeanImpl();
-		fila2.setTransaccionFechaHora(Fechas.convertirStringADate("2021-09-15","17:20:00"));
-		fila2.setTransaccionTipo("extraccion");
-		fila2.setTransaccionMonto(-200.00);
-		fila2.setTransaccionCodigoCaja(2);
-		fila2.setCajaAhorroDestinoNumero(0);	
-		lista.add(fila2);
-		
-		TransaccionCajaAhorroBean fila3 = new TransaccionCajaAhorroBeanImpl();
-		fila3.setTransaccionFechaHora(Fechas.convertirStringADate("2021-09-14","09:03:00"));
-		fila3.setTransaccionTipo("deposito");
-		fila3.setTransaccionMonto(1600.00);
-		fila3.setTransaccionCodigoCaja(2);
-		fila3.setCajaAhorroDestinoNumero(0);	
-		lista.add(fila3);		
-
-		TransaccionCajaAhorroBean fila4 = new TransaccionCajaAhorroBeanImpl();
-		fila4.setTransaccionFechaHora(Fechas.convertirStringADate("2021-09-13","13:30:00"));
-		fila4.setTransaccionTipo("debito");
-		fila4.setTransaccionMonto(-50.00);
-		fila4.setTransaccionCodigoCaja(0);
-		fila4.setCajaAhorroDestinoNumero(0);	
-		lista.add(fila4);	
-		
-		TransaccionCajaAhorroBean fila5 = new TransaccionCajaAhorroBeanImpl();
-		fila5.setTransaccionFechaHora(Fechas.convertirStringADate("2021-09-12","15:00:00"));
-		fila5.setTransaccionTipo("transferencia");
-		fila5.setTransaccionMonto(-400.00);
-		fila5.setTransaccionCodigoCaja(41);
-		fila5.setCajaAhorroDestinoNumero(7);	
-		lista.add(fila5);
-		
-		logger.debug("Retorna una lista con {} elementos", lista.size());
+			
+			while (rs.next()) { //Recorro las filas obtenidas de la vista trans_caja_Ahorro recuperando todos los valores necesarios para cada fila.
+				filaNueva = new TransaccionCajaAhorroBeanImpl();
+				filaNueva.setTransaccionFechaHora(Fechas.convertirStringADate(rs.getString("fecha"),rs.getString("hora")));
+				filaNueva.setTransaccionTipo(rs.getString("tipo"));
+				filaNueva.setTransaccionMonto(rs.getDouble("monto"));
+				filaNueva.setTransaccionCodigoCaja(rs.getInt("cod_caja"));
+				filaNueva.setCajaAhorroDestinoNumero(rs.getInt("destino"));
+				lista.add(filaNueva);
+				
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar movimientos por periodo de la BD.");
+		}
 		
 		return lista;
 		
-		// Fin datos estáticos de prueba.
+	}
+	
+	
+	//Convierte la fecha recibida a un string que puede leer SQL
+	public String validarFecha(Date fecha) throws Exception {
+		String resp=null;
+		
+		if(fecha==null) {
+			throw new Exception("Error: fecha nula o invalida");
+		}
+			
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+		resp=dateFormat.format(fecha);
+		
+		return resp;
 	}
 	
 	@Override
