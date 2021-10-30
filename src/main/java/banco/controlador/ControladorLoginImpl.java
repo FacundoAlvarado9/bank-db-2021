@@ -108,46 +108,52 @@ public class ControladorLoginImpl implements ControladorLogin {
 		logger.debug("Recupera el usuario de BD para {}","Cliente");
 		UsuarioBean usuario = this.modelo.obtenerUsuario("ATM");
 
-		if (usuario != null) {
-			
-			logger.debug("usuario {}, password {}",usuario.getUsername(), usuario.getPassword());
-			
-			ModeloATM modeloATM = new ModeloATMImpl();
-			
-			if (modeloATM.conectar(usuario.getUsername(), usuario.getPassword())) {
-			
-				if (modeloATM.autenticarUsuarioAplicacion(tarjeta, String.valueOf(pin))) {
-
-					logger.info("Usuario {} autenticado","Cliente");
+		try {
+		
+			if (usuario != null) {
 				
-					VentanaATM ventanaATM = new VentanaATMImpl();
-					ControladorATM controladorATM = new ControladorATMImpl(ventanaATM, modeloATM);
+				logger.debug("usuario {}, password {}",usuario.getUsername(), usuario.getPassword());
+				
+				ModeloATM modeloATM = new ModeloATMImpl();
+				
+				if (modeloATM.conectar(usuario.getUsername(), usuario.getPassword())) {
+				
+					if (modeloATM.autenticarUsuarioAplicacion(tarjeta, String.valueOf(pin))) {
+	
+						logger.info("Usuario {} autenticado","Cliente");
 					
-					logger.info("Transfiere el control al nuevo controlador");
-					controladorATM.ejecutar();
-					
-					logger.info("Informa a la vista que puede eliminar la ventana de login.");					
-					this.ventana.eliminarVentana();
-					
+						VentanaATM ventanaATM = new VentanaATMImpl();
+						ControladorATM controladorATM = new ControladorATMImpl(ventanaATM, modeloATM);
+						
+						logger.info("Transfiere el control al nuevo controlador");
+						controladorATM.ejecutar();
+						
+						logger.info("Informa a la vista que puede eliminar la ventana de login.");					
+						this.ventana.eliminarVentana();
+						
+					}
+					else
+					{
+						logger.error("Hubo un error en la autenticación.");
+						this.ventana.informar("El usuario o contraseña ingresados son incorrectos.");
+					}
 				}
 				else
 				{
-					logger.error("Hubo un error en la autenticación.");
-					this.ventana.informar("El usuario o contraseña ingresados son incorrectos.");
-				}
+					logger.error("No se pudo conectar a la BD.");
+					this.ventana.informar("Error en la conexión con la BD.");
+				}			
 			}
 			else
 			{
-				logger.error("No se pudo conectar a la BD.");
-				this.ventana.informar("Error en la conexión con la BD.");
-			}			
-		}
-		else
-		{
-			logger.error("No se pudo recuperar la información del usuario ATM.");
-			this.ventana.informar("Error en el acceso a la información del usuario ATM.");
-		}			
+				logger.error("No se pudo recuperar la información del usuario ATM.");
+				this.ventana.informar("Error en el acceso a la información del usuario ATM.");
+			}	
+	}catch(Exception ex) {
+		ex.getMessage();
+	}
 		
 	}
+	
 	
 }

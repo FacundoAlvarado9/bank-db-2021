@@ -50,7 +50,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 	}
 
 	@Override
-	public boolean autenticarUsuarioAplicacion(String tarjeta, String pin)	{
+	public boolean autenticarUsuarioAplicacion(String tarjeta, String pin) throws Exception{
 		
 		logger.info("Se intenta autenticar la tarjeta {} con pin {}", tarjeta, pin);
 
@@ -60,13 +60,27 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 *      Si la autenticación no es exitosa porque no coincide el pin o la tarjeta no existe deberá retornar falso
 		 *      y si hubo algún otro error deberá producir una excepción.
 		 */
-		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		this.tarjeta = tarjeta;
-        return true;
-		// Fin datos estáticos de prueba.
+		boolean resul_autenticacion = false;
+
+		try {
+
+			ResultSet rs = this.consulta("SELECT nro_tarjeta FROM tarjeta WHERE  nro_tarjeta= " + Integer.parseInt(tarjeta) + " AND pin=md5(" + pin + ")");
+			//ResultSet rs = this.consulta();
+			
+			while (rs.next()) { //Si hay resultados, entonces coincide la tarjeta y el pin.
+				resul_autenticacion = true; //Resultó exitosa la autenticación
+				this.tarjeta = rs.getString("nro_tarjeta"); //seteo el numero de tarjeta
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar la tarjeta de la BD.");
+		}
+
+		return resul_autenticacion;
+	
 	}
 	
 	

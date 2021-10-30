@@ -29,8 +29,9 @@ public interface ModeloATM extends Modelo {
 	 * @param pin string plano que debe convertirse a MD5 para consultar en la BD
 	 * @return boolean verdadero si autentica exitosamente y falso si no exite la tarjeta, o el pin no corresponde, 
 	 * o si se produce una excepción en la conexión. 
+	 * @throws Exception 
 	 */
-	public boolean autenticarUsuarioAplicacion(String tarjeta, String pin);
+	public boolean autenticarUsuarioAplicacion(String tarjeta, String pin) throws Exception;
 	
 	/**
 	  * Método encargado de obtener el saldo del cliente
