@@ -24,6 +24,8 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 	private String tarjeta = null;   // mantiene la tarjeta del cliente actual
 	private Integer codigoATM = null;
 	
+	private String caja=null; //mantiene el numero de caja correspondientes a la tarjeta actual
+	
 	/*
 	 * La información del cajero ATM se recupera del archivo que se encuentra definido en ModeloATM.CONFIG
 	 */
@@ -64,12 +66,13 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 
 		try {
 
-			ResultSet rs = this.consulta("SELECT nro_tarjeta FROM tarjeta WHERE  nro_tarjeta= " + Integer.parseInt(tarjeta) + " AND pin=md5(" + pin + ")");
-			//ResultSet rs = this.consulta();
+			ResultSet rs = this.consulta("SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= " + Integer.parseInt(tarjeta) + " AND pin=md5(" + pin + ")");
+
 			
 			while (rs.next()) { //Si hay resultados, entonces coincide la tarjeta y el pin.
 				resul_autenticacion = true; //Resultó exitosa la autenticación
 				this.tarjeta = rs.getString("nro_tarjeta"); //seteo el numero de tarjeta
+				this.caja = rs.getString("nro_ca"); //seteo el numero de caja
 			}
 			
 		} catch(SQLException ex) {
@@ -98,12 +101,29 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 *      Debe capturar la excepción SQLException y propagar una Exception más amigable.
 		 */
 
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.
-		 */
-		Double saldo = (double) 1001;		
+		double saldo=0;
+
+		try {
+
+			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_ca="+caja);
+
+			
+			
+			if(rs.next()) {
+				saldo = rs.getDouble("saldo"); //seteo el saldo
+				System.out.println("saldo: "+saldo);
+			}
+			
+			
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar el saldo de la BD.");
+		}
+
 		return saldo;
-		// Fin datos estáticos de prueba.
 	}	
 
 	@Override
