@@ -203,7 +203,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro  WHERE nro_cliente="+cliente+" and TIMEDIFF('"+fechaFin+"',fecha)>'00-00-00' AND TIMEDIFF('"+fechaIni+"',fecha)<0");
 
 			
-			while (rs.next()) { //Recorro las filas obtenidas de la vista trans_caja_Ahorro recuperando todos los valores necesarios para cada fila.
+			while (rs.next()) { //Recorro las filas obtenidas de la vista trans_caja_Ahorro recuperando todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
 				filaNueva.setTransaccionFechaHora(Fechas.convertirStringADate(rs.getString("fecha"),rs.getString("hora")));
 				filaNueva.setTransaccionTipo(rs.getString("tipo"));
@@ -228,6 +228,15 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 	
 	//Convierte la fecha recibida a un string que puede leer SQL
 	public String validarFecha(Date fecha) throws Exception {
+		
+		/**
+		 * 
+		 * 
+		 * Cambiar, usar los metodos provistos por la catedra en fechas
+		 * 
+		 * 
+		 */
+		
 		String resp=null;
 		
 		if(fecha==null) {
