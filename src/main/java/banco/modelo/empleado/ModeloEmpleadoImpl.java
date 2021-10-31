@@ -11,6 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import banco.modelo.ModeloImpl;
+import banco.modelo.atm.TransaccionCajaAhorroBean;
+import banco.modelo.atm.TransaccionCajaAhorroBeanImpl;
 import banco.modelo.empleado.beans.ClienteBean;
 import banco.modelo.empleado.beans.ClienteMorosoBean;
 import banco.modelo.empleado.beans.DAOCliente;
@@ -26,6 +28,7 @@ import banco.modelo.empleado.beans.DAOPrestamoImpl;
 import banco.modelo.empleado.beans.EmpleadoBean;
 import banco.modelo.empleado.beans.PagoBean;
 import banco.modelo.empleado.beans.PrestamoBean;
+import banco.utils.Fechas;
 
 import javax.xml.transform.Result;
 
@@ -86,20 +89,38 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 	}	
 	
 	@Override
-	public ArrayList<String> obtenerTiposDocumento() {
+	public ArrayList<String> obtenerTiposDocumento() throws Exception {
 		logger.info("recupera los tipos de documentos.");
 		/** 
 		 * TODO Debe retornar una lista de strings con los tipos de documentos. 
 		 *      Deberia propagar una excepción si hay algún error en la consulta.
 		 */
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
 		ArrayList<String> tipos = new ArrayList<String>();
-		tipos.add("DNI");
+		String tipoNuevo;
+		try {
+
+			ResultSet rs = this.consulta("SELECT tipo_doc FROM cliente GROUP BY tipo_doc");
+
+			
+			while (rs.next()) { //Recorro lavista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
+				
+				tipoNuevo=rs.getString("tipo_doc");
+
+				tipos.add(tipoNuevo);
+				
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar los tipos de documentos de los clientes de la BD.");
+		}
+		
+
 		return tipos;
-		// Fin datos estáticos de prueba.
+
 	}	
 
 	@Override
@@ -175,11 +196,30 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		 *      Si hay una excepción la propaga con un mensaje apropiado.
 		 */
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		return null;
-		// Fin datos estáticos de prueba.
+		Integer nro_prestamo=null;
+		
+		try {
+			//Recupero los prestamos del cliente vigenyes (esto son en los cuales hay almenos un pago con fecha de pago nula)
+			ResultSet rs = this.consulta("SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente="+nroCliente);
+
+			
+			if (rs.next()) { //Recupero el primero de los prestamos, si es que lo hay
+				
+				nro_prestamo=rs.getInt("nro_prestamo");
+				
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar prestamos de la BD.");
+		}
+		
+		
+		
+		return nro_prestamo;
+
 	}
 
 
