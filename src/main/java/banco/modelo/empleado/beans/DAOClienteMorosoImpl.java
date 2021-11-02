@@ -4,10 +4,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import banco.modelo.atm.TransaccionCajaAhorroBean;
+import banco.modelo.atm.TransaccionCajaAhorroBeanImpl;
+import banco.utils.Fechas;
 
 public class DAOClienteMorosoImpl implements DAOClienteMoroso {
 
@@ -34,31 +39,39 @@ public class DAOClienteMorosoImpl implements DAOClienteMoroso {
 		 *      si hay algún error que necesita ser informado al usuario. 
 		 */
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
+		String sql_nros_prestamos="SELECT nro_prestamo, COUNT(nro_prestamo) AS cuotas_atrasadas FROM prestamo NATURAL JOIN pago WHERE TIMEDIFF(CURDATE(),fecha_venc)>0 AND fecha_pago IS NULL GROUP BY nro_prestamo";
+		
 		ArrayList<ClienteMorosoBean> morosos = new ArrayList<ClienteMorosoBean>();
+		ClienteMorosoBean moroso;
 		PrestamoBean prestamo = null;
 		ClienteBean cliente = null;
 		
-		ClienteMorosoBean moroso1 = new ClienteMorosoBeanImpl();
-		prestamo = daoPrestamo.recuperarPrestamo(1); // El prestamo 1 tiene cuotas atrasadas - valor que deberá ser obtenido por la SQL
-		cliente = daoCliente.recuperarCliente(prestamo.getNroCliente());
-		moroso1.setCliente(cliente);
-		moroso1.setPrestamo(prestamo);
-		moroso1.setCantidadCuotasAtrasadas(2);  //valor que deberá ser obtenido por la SQL
-		morosos.add(moroso1);
-
-		ClienteMorosoBean moroso2 = new ClienteMorosoBeanImpl();
-		prestamo = daoPrestamo.recuperarPrestamo(3); // El prestamo 3 tiene cuotas atrasadas - valor que deberá ser obtenido por la SQL
-		cliente = daoCliente.recuperarCliente(prestamo.getNroCliente());
-		moroso2.setCliente(cliente);
-		moroso2.setPrestamo(prestamo);
-		moroso2.setCantidadCuotasAtrasadas(6);  //valor que deberá ser obtenido por la SQL
-		morosos.add(moroso2);
+		try {
+			Statement select = conexion.createStatement();
+			ResultSet rsNrosPrestamosMorosos = select.executeQuery(sql_nros_prestamos);//Obtengo todos los numeros de prestamos que tienen cuotas atrasadas y cuantas cuaotas tienen atrasadas
+			
+			while (rsNrosPrestamosMorosos.next()) { //Recorro los numeros de prestamos morosos y por cada uno obtengo el prestamo y el cliente
+				prestamo = daoPrestamo.recuperarPrestamo(rsNrosPrestamosMorosos.getInt("nro_prestamo"));
+				cliente = daoCliente.recuperarCliente(prestamo.getNroCliente());
+				
+				//Armo el cliente moroso y lo agrego a la lista
+				moroso = new ClienteMorosoBeanImpl();
+				moroso.setCliente(cliente);
+				moroso.setPrestamo(prestamo);	
+				moroso.setCantidadCuotasAtrasadas(rsNrosPrestamosMorosos.getInt("cuotas_atrasadas"));
+				morosos.add(moroso);
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar prestamo moroso de la BD.");
+		}
+		
 		
 		return morosos;		
-		// Fin datos estáticos de prueba.
+
 		
 	}
 
