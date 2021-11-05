@@ -134,12 +134,30 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		 *      no encuentra el monto dentro del [monto_inf,monto_sup] y la cantidadMeses.
 		 */
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		double tasa = 23.00;
+		
+		double tasa;
+		
+		try {
+
+			//Obtengo la tasa correspondiente
+			ResultSet rs = this.consulta("SELECT tasa FROM tasa_prestamo WHERE monto_inf <= "+monto+" AND monto_sup >= "+monto+" AND periodo="+cantidadMeses+"");
+
+			
+			if (rs.next()) {
+				tasa=rs.getDouble("tasa");
+			}else {
+				throw new Exception("El monto no se corresponde con una cantidad de meses valida en la BD.");
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar la tasa del prestamo de la BD.");
+		}
+		
    		return tasa;
-     	// Fin datos estáticos de prueba.
+     	
 	}
 
 	@Override
@@ -170,10 +188,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		 *      Deberia propagar una excepción si hay algún error de conexión o 
 		 *      no encuentra el monto dentro del [monto_inf,monto_sup].
 		 */
-		//SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1000 AND monto_sup >= 1000;
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */		
+
 		ArrayList<Integer> cantMeses = new ArrayList<Integer>();
 		try {
 
@@ -186,6 +201,10 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 				cantMeses.add(rs.getInt("periodo"));
 
 				
+			}
+			
+			if(cantMeses.isEmpty()) {
+				throw new Exception("Error: No se encuentra un periodo para el monto dado en la BD.");
 			}
 			
 		} catch(SQLException ex) {
