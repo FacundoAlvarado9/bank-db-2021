@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,26 +30,45 @@ public class DAOEmpleadoImpl implements DAOEmpleado {
 		 *      De ocurre algun error deberá generar una excepción.		 * 
 		 */		
 		
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
-		 */
-		
+		String sql = "SELECT * FROM empleado WHERE legajo=" + legajo;
+
+		logger.info("sql: {}", sql);
+
 		EmpleadoBean empleado = null;
-		
-		empleado = new EmpleadoBeanImpl();
-		empleado.setLegajo(9);
-		empleado.setApellido("ApEmp9");
-		empleado.setNombre("NomEmp9");
-		empleado.setTipoDocumento("DNI");
-		empleado.setNroDocumento(9);
-		empleado.setDireccion("DirEmp9");
-		empleado.setTelefono("999-9999");
-		empleado.setCargo("Empleado de Prestamos");
-		empleado.setPassword("45c48cce2e2d7fbdea1afc51c7c6ad26"); // select md5(9);
-		empleado.setNroSucursal(7);
+
+		try{
+
+			Statement select = conexion.createStatement();
+			ResultSet rs = select.executeQuery(sql);
+
+			if(rs.next()){
+				logger.info("Se recuperó un prestamo que coincide.");
+
+				empleado = new EmpleadoBeanImpl();
+				empleado.setLegajo(rs.getInt("legajo"));
+				empleado.setApellido(rs.getString("apellido"));
+				empleado.setNombre(rs.getString("nombre"));
+				empleado.setTipoDocumento(rs.getString("tipo_doc"));
+				empleado.setNroDocumento(rs.getInt("nro_doc"));
+				empleado.setDireccion(rs.getString("direccion"));
+				empleado.setTelefono(rs.getString("telefono"));
+				empleado.setCargo(rs.getString("cargo"));
+				empleado.setPassword(rs.getString("password"));
+				empleado.setNroSucursal(rs.getInt("nro_suc"));
+
+			}
+
+
+		} catch (SQLException ex){
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al obtener el empleado en la B.D.");
+		}
+
 		
 		return empleado;
-		// Fin datos estáticos de prueba.
+		
 	}
 
 }
