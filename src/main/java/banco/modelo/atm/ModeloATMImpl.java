@@ -282,9 +282,43 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 * retorna la cuenta en formato int
 		 */	
 		
-		logger.info("Encontró la cuenta en la BD.");
-        return 1;
+		/*
+		 * Nada mas see ve que el dato venga bien de la interface de usuario
+		 * Solamente verificar que p_Cuenta no sea nulo ni menor a acero,
+		 * (El cheqeo de que la caja de ahorro exista se va a hacer despues desde el store procedure)
+		 */
+		Integer cuenta;
+		
+		if (isNumeric(p_cuenta) == true) {//Verifico que el string sea un numero
+			cuenta = Integer.parseInt(p_cuenta);
+            System.out.println("Numero: " + p_cuenta);
+        } else {
+        	throw new Exception("Error: El numero de cuenta ingresado no es un numero");
+        }
+		
+		if(cuenta<=0) {
+			throw new Exception("Error: El numero de cuenta no puede ser menor o igual a cero");
+		}
+		
+		
+		//logger.info("Encontró la cuenta en la BD.");
+        return cuenta;
 	}	
+	
+	 private boolean isNumeric(String cadena) {
+
+	        boolean resultado;
+
+	        try {
+	            Integer.parseInt(cadena);
+	            resultado = true;
+	        } catch (NumberFormatException excepcion) {
+	            resultado = false;
+	        }
+
+	        return resultado;
+	    }
+
 	
 	@Override
 	public Double transferir(Double monto, int cajaDestino) throws Exception {
