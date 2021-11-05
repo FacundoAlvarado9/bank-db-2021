@@ -170,19 +170,34 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		 *      Deberia propagar una excepción si hay algún error de conexión o 
 		 *      no encuentra el monto dentro del [monto_inf,monto_sup].
 		 */
-		
+		//SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1000 AND monto_sup >= 1000;
 		/*
 		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.  
 		 */		
 		ArrayList<Integer> cantMeses = new ArrayList<Integer>();
-		cantMeses.add(9);
-		cantMeses.add(18);
-		cantMeses.add(27);
-		cantMeses.add(54);
-		cantMeses.add(108);
+		try {
+
+			//Obtengo todos los periodos que correspondientes al monto dado
+			ResultSet rs = this.consulta("SELECT periodo FROM tasa_prestamo WHERE monto_inf <= "+monto+" AND monto_sup >= "+monto);
+
+			
+			while (rs.next()) { //Recorro y agrego todos los periodos obtenidos
+				
+				cantMeses.add(rs.getInt("periodo"));
+
+				
+			}
+			
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al recuperar periodos posibles segun el monto de la BD.");
+		}
+		
 		
 		return cantMeses;
-		// Fin datos estáticos de prueba.
+
 	}
 
 	@Override	
