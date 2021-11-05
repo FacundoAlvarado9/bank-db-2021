@@ -66,16 +66,19 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 
 		logger.info("sql: {}", sql);
 
-		PrestamoBean prestamo = new PrestamoBeanImpl();
+		PrestamoBean prestamo = null;
 
 		try{
 
 			Statement select = conexion.createStatement();
 			ResultSet rs = select.executeQuery(sql);
-
-			while(rs.next()){
+			
+			
+			
+			if(rs.next()){
 				logger.info("Se recuperó un prestamo que coincide.");
-
+				
+				prestamo = new PrestamoBeanImpl();
 				prestamo.setNroPrestamo(rs.getInt("nro_prestamo"));
 				prestamo.setFecha(rs.getDate("fecha"));
 				prestamo.setCantidadMeses(rs.getInt("cant_meses"));
@@ -85,7 +88,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 				prestamo.setValorCuota(rs.getFloat("valor_cuota"));
 				prestamo.setLegajo(rs.getInt("legajo"));
 				prestamo.setNroCliente(rs.getInt("nro_cliente"));
-
+				
 			}
 
 
@@ -97,32 +100,8 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 		}
 
 
-
-		/*
-		 * Datos estáticos de prueba. Quitar y reemplazar por código que recupera los datos reales.
-		 * Retorna un PretamoBean con información del prestamo nro 4
-		 */
-
-		/*
-		PrestamoBean prestamo1 = null;
-
-		prestamo = new PrestamoBeanImpl();
-		prestamo.setNroPrestamo(4);
-		prestamo.setFecha(Fechas.convertirStringADate("2021-04-05"));
-		prestamo.setCantidadMeses(6);
-		prestamo.setMonto(20000);
-		prestamo.setTasaInteres(24);
-		prestamo.setInteres(2400);
-		prestamo.setValorCuota(3733.33);
-		prestamo.setLegajo(2);
-		prestamo.setNroCliente(2);
-
-		 */
-
-
-   	
 		return prestamo;
-		// Fin datos estáticos de prueba.
+
 	}
 
 }
