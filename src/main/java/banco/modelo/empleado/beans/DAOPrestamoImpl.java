@@ -28,6 +28,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 	public void crearActualizarPrestamo(PrestamoBean prestamo) throws Exception {
 
 		logger.info("Creación o actualizacion del prestamo.");
+		logger.debug("fecha : {}", prestamo.getFecha());
 		logger.debug("meses : {}", prestamo.getCantidadMeses());
 		logger.debug("monto : {}", prestamo.getMonto());
 		logger.debug("tasa : {}", prestamo.getTasaInteres());
@@ -37,7 +38,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 		logger.debug("cliente : {}", prestamo.getNroCliente());
 		
 		/**
-		 * TODO Crear o actualizar el Prestamo segun el PrestamoBean prestamo. 
+		 * TODO (hecho) Crear o actualizar el Prestamo segun el PrestamoBean prestamo.
 		 *      Si prestamo tiene nroPrestamo es una actualizacion, si el nroPrestamo es null entonces es un nuevo prestamo.
 		 * 
 		 * @throws Exception deberá propagar la excepción si ocurre alguna. Puede capturarla para loguear los errores, ej.
@@ -47,6 +48,68 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 		 *		   pero luego deberá propagarla para que se encargue el controlador. 
 		 */
 
+		String sql;
+
+		try{
+
+			if(prestamo.getNroPrestamo() == null){
+				//creo un nuevo prestamo
+
+				//INSERT INTO prestamo VALUES(NULL, fecha, cant_meses, monto, tasa_interes, interes, valor_cuota, legajo, nro_cliente)
+				sql = "INSERT INTO prestamo VALUES(NULL, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+				PreparedStatement insert = conexion.prepareStatement(sql);
+
+				insert.setDate(1, Fechas.convertirDateADateSQL(java.util.Calendar.getInstance().getTime())); //Si creamos un prestamo, la fecha es la de hoy
+				insert.setInt(2, prestamo.getCantidadMeses());
+				insert.setDouble(3, prestamo.getMonto());
+				insert.setDouble(4, prestamo.getTasaInteres());
+				insert.setDouble(5, prestamo.getInteres());
+				insert.setDouble(6, prestamo.getValorCuota());
+				insert.setInt(7, prestamo.getLegajo());
+				insert.setInt(8, prestamo.getNroCliente());
+
+				insert.executeUpdate();
+			} else{
+				//Actualizo el prestamo con nro_prestamo dado
+
+				sql = "UPDATE prestamo " +
+						"SET fecha = ?, " +
+						"cant_meses = ?, " +
+						"monto = ?, " +
+						"tasa_interes = ?," +
+						"interes = ?, " +
+						"valor_cuota = ?, " +
+						"legajo = ?, " +
+						"nro_cliente = ? " +
+						"WHERE nro_prestamo = ?";
+
+				PreparedStatement update = conexion.prepareStatement(sql);
+
+				update.setDate(1, Fechas.convertirDateADateSQL(prestamo.getFecha()));
+				update.setInt(2, prestamo.getCantidadMeses());
+				update.setDouble(3, prestamo.getMonto());
+				update.setDouble(4, prestamo.getTasaInteres());
+				update.setDouble(5, prestamo.getInteres());
+				update.setDouble(6, prestamo.getValorCuota());
+				update.setInt(7, prestamo.getLegajo());
+				update.setInt(8, prestamo.getNroCliente());
+
+				//UPDATE (...) WHERE nro_prestamo = ?
+				update.setInt(9, prestamo.getNroPrestamo());
+
+				update.executeUpdate();
+
+			}
+
+
+		} catch(SQLException ex){
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error inesperado al crear/actualizar prestamo");
+		}
+
 	}
 
 	@Override
@@ -55,7 +118,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 		logger.info("Recupera el prestamo nro {}.", nroPrestamo);
 		
 		/**
-		 * TODO Obtiene el prestamo según el id nroPrestamo
+		 * TODO (hecho) Obtiene el prestamo según el id nroPrestamo
 		 * 
 		 * @param nroPrestamo
 		 * @return Un prestamo que corresponde a ese id o null
