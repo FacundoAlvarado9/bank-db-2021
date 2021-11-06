@@ -6151,3 +6151,3006 @@ Saliendo de la aplicación.
 Se desconecta la conexión a la BD.
 Se intenta cerrar la conexión activa
 Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 1.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 1
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 66
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 3.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 3
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 64
+Se recuperó cliente que coincide.
+Muestra una lista con 2 clientes morosos
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 1.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 1
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 66
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 3.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 3
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 64
+Se recuperó cliente que coincide.
+Muestra una lista con 2 clientes morosos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 3 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 3.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 3
+Se recuperó cliente que coincide.
+Verifica si el cliente 6 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=6
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 2001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 2001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 2001
+Se recuperó cliente que coincide.
+Verifica si el cliente 38 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=38
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 501 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Busca el prestamo número 41
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 2
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 2 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 2 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 501 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Busca el prestamo número 41
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 2
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 2001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 2001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 2001
+Se recuperó cliente que coincide.
+Verifica si el cliente 38 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=38
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 5001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 5001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 5001
+Se recuperó cliente que coincide.
+Verifica si el cliente 35 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=35
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 401 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 401.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 401
+Se recuperó cliente que coincide.
+Verifica si el cliente 25 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=25
+Busca el prestamo número 42
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 42.
+Inicia la recuperacion de los pagos del prestamo 42
+sql: SELECT * FROM pago WHERE nro_prestamo = 42
+Se recuperó pago nro 1 para prestamo nro 42
+Se recuperó pago nro 2 para prestamo nro 42
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 42 del cliente DNI 401.
+recupera el cliente con documento de tipo DNI y nro 401.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 401
+Se recuperó cliente que coincide.
+Verifica si el cliente 25 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=25
+Inicia el pago de las 1 cuotas del prestamo 42
+sql: SELECT * FROM pago WHERE nro_prestamo = 42 AND nro_pago = 2
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 2001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 2001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 2001
+Se recuperó cliente que coincide.
+Verifica si el cliente 38 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=38
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 500.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 500.0 AND monto_sup >= 500.0
+Carga el combo con las cantidad de meses recuperadas. Total 6 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 500.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 500.0 con una cantidad de meses 1
+Cambia de estado para permitir crear el prestamo.
+Ingresa el item: 9
+Ingresa el item: 18
+Ingresa el item: 27
+Ingresa el item: 54
+Ingresa el item: 108
+Cambia de estado para permitir ingresar el período
+Solicita cambiar el monto.
+Solicita cambiar el monto.
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 1000.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0
+Carga el combo con las cantidad de meses recuperadas. Total 7 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Cambia de estado para permitir crear el prestamo.
+Ingresa el item: 2
+Ingresa el item: 9
+Ingresa el item: 18
+Ingresa el item: 27
+Ingresa el item: 54
+Ingresa el item: 108
+Cambia de estado para permitir ingresar el período
+Cambia la opcion del mes a 108 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 108
+Cambia de estado para permitir crear el prestamo.
+Solicita cambiar el monto.
+Solicita cambiar el monto.
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 1002.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1002.0 AND monto_sup >= 1002.0
+Carga el combo con las cantidad de meses recuperadas. Total 6 items
+Ingresa el item: 2
+Cambia la opcion del mes a 2 con monto 1002.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1002.0 con una cantidad de meses 2
+Cambia de estado para permitir crear el prestamo.
+Ingresa el item: 9
+Ingresa el item: 18
+Ingresa el item: 27
+Ingresa el item: 54
+Ingresa el item: 108
+Cambia de estado para permitir ingresar el período
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 2001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 2001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 2001
+Se recuperó cliente que coincide.
+Verifica si el cliente 38 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=38
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 5000.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 5000.0 AND monto_sup >= 5000.0
+Carga el combo con las cantidad de meses recuperadas. Total 1 items
+Ingresa el item: 5
+Cambia la opcion del mes a 5 con monto 5000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 5000.0 con una cantidad de meses 5
+Cambia de estado para permitir crear el prestamo.
+Cambia de estado para permitir ingresar el período
+Solicita cambiar el monto.
+Solicita cambiar el monto.
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 1000.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0
+Carga el combo con las cantidad de meses recuperadas. Total 2 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Cambia de estado para permitir crear el prestamo.
+Ingresa el item: 2
+Cambia de estado para permitir ingresar el período
+Solicita cambiar el monto.
+Solicita cambiar el monto.
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 500.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 500.0 AND monto_sup >= 500.0
+Carga el combo con las cantidad de meses recuperadas. Total 1 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 500.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 500.0 con una cantidad de meses 1
+Cambia de estado para permitir crear el prestamo.
+Cambia de estado para permitir ingresar el período
+Cambia la opcion del mes a 1 con monto 500.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 500.0 con una cantidad de meses 1
+Cambia de estado para permitir crear el prestamo.
+Solicita la creación de un nuevo prestamo.
+Solicita realizar el prestamo para el cliente DNI:2001 de un monto de 500 en un periodo de 1 meses
+recupera el cliente con documento de tipo DNI y nro 2001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 2001
+Se recuperó cliente que coincide.
+Verifica que el cliente 38 no tenga un prestamo vigente.
+Verifica si el cliente 38 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=38
+Busca la tasa, interes y cuota para un prestamo de 500.0 pesos a 1 meses
+Busca la tasa correspondiente a el monto 500.0 con una cantidad de meses 1
+Crea un nuevo prestamo.
+Actualiza el prestamo con el legajo 1
+Creación o actualizacion del prestamo.
+meses : 1
+monto : 500.0
+tasa : 23.0
+interes : 9.583333333333334
+cuota : 509.5833333333333
+legajo : 1
+cliente : 38
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 3001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 3001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 3001
+Se recuperó cliente que coincide.
+Verifica si el cliente 37 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=37
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 1000.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0
+Carga el combo con las cantidad de meses recuperadas. Total 2 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Ingresa el item: 2
+Cambia de estado para permitir ingresar el período
+Cambia la opcion del mes a 2 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 2
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=2
+Cambia de estado para permitir crear el prestamo.
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Cambia la opcion del mes a 2 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 2
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=2
+Cambia de estado para permitir crear el prestamo.
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Cambia la opcion del mes a 2 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 2
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=2
+Cambia de estado para permitir crear el prestamo.
+Cambia la opcion del mes a 1 con monto 1000.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 1000.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 1000.0 AND monto_sup >= 1000.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+Se registra al empleado ApEmp9, NomEmp9 con legajo 9
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Cerrando la sesión.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Creando la ventana de login.
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(1)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin 101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(101)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [1, 0, 2]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin 102
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(102)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 3 clientes morosos
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 1001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 1001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 1001
+Se recuperó cliente que coincide.
+Verifica si el cliente 39 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=39
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 300.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 300.0 AND monto_sup >= 300.0
+Carga el combo con las cantidad de meses recuperadas. Total 1 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 300.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 300.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 300.0 AND monto_sup >= 300.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Cambia de estado para permitir ingresar el período
+Cambia la opcion del mes a 1 con monto 300.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 300.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 300.0 AND monto_sup >= 300.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Solicita la creación de un nuevo prestamo.
+Solicita realizar el prestamo para el cliente DNI:1001 de un monto de 300 en un periodo de 1 meses
+recupera el cliente con documento de tipo DNI y nro 1001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 1001
+Se recuperó cliente que coincide.
+Verifica que el cliente 39 no tenga un prestamo vigente.
+Verifica si el cliente 39 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=39
+Busca la tasa, interes y cuota para un prestamo de 300.0 pesos a 1 meses
+Busca la tasa correspondiente a el monto 300.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 300.0 AND monto_sup >= 300.0 AND periodo=1
+Crea un nuevo prestamo.
+Actualiza el prestamo con el legajo 1
+Creación o actualizacion del prestamo.
+meses : 1
+monto : 300.0
+tasa : 1.0
+interes : 0.25
+cuota : 300.25
+legajo : 1
+cliente : 39
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 1001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 1001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 1001
+Se recuperó cliente que coincide.
+Verifica si el cliente 39 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=39
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 2
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Cerrando la sesión.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Creando la ventana de login.
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [2, 1, 6]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 216
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(216)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 101, password 1
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 101 con password 1
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 101 AND password=md5('1')
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de extracción
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la extracción
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Se solicita al usuario la confirmación la extracción
+Selecciono la opcion 0
+Realiza la extraccion de $1000.0 sobre la cuenta
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Ejecuta el listener de ultimos movimientos
+Muestra el panel de ultimos movimientos
+Consulta al modelo por ultimos movimientos
+Busca las ultimas 15 transacciones en la BD de la tarjeta 101
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_cliente=1
+Muestra la lista de movimientos
+Muestra una lista con 2 transacciones
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 1012
+Encontró la cuenta en la BD.
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta -5
+Encontró la cuenta en la BD.
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta sdf
+Encontró la cuenta en la BD.
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta kjh
+Encontró la cuenta en la BD.
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta -123
+Encontró la cuenta en la BD.
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 23
+Intenta realizar el parsing de un codigo de cuenta 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta 12
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta 
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 123
+Intenta realizar el parsing de un codigo de cuenta 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 12312
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 1
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 3001 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 3001.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 3001
+Se recuperó cliente que coincide.
+Verifica si el cliente 37 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=37
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+SQLState: 42000
+VendorError: 1064
+Se produjo una excepción Error inesperado al consultar pagos en la B.D.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 1 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+Crea una ventana modal informando sobre el mensaje.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 2
+Crea una ventana modal informando sobre el mensaje.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Busca el prestamo número 40
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 2 cuotas a pagar de la tabla.
+Solicita pagar 2 cuotas del prestamo 40 del cliente DNI 601.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+Inicia el pago de las 2 cuotas del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 1
+Se recuperó pago nro 1 para prestamo nro 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40 AND nro_pago = 2
+Se recuperó pago nro 2 para prestamo nro 40
+Crea una ventana modal informando sobre el mensaje.
+Solicita la busqueda de pagos al modelo sobre el prestamo 40.
+Inicia la recuperacion de los pagos del prestamo 40
+sql: SELECT * FROM pago WHERE nro_prestamo = 40
+Se recuperó pago nro 1 para prestamo nro 40
+Se recuperó pago nro 2 para prestamo nro 40
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Solicita cambiar el monto.
+Solicita cambiar el cliente.
+Cambia de estado para permitir ingresar un cliente
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 601 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 601.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 601
+Se recuperó cliente que coincide.
+Verifica si el cliente 27 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=27
+El cliente no tiene un prestamo vigente.
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pswEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pswEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pswEmp1101')
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 501 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Busca el prestamo número 41
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 1 cuotas a pagar de la tabla.
+Solicita pagar 1 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Inicia el pago de las 1 cuotas del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41 AND nro_pago = 2
+Se recuperó pago nro 2 para prestamo nro 41
+Crea una ventana modal informando sobre el mensaje.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Solicita cambiar el monto.
+Solicita cambiar el cliente.
+Cambia de estado para permitir ingresar un cliente
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 501 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Busca el prestamo número 41
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de ultimos movimientos
+Muestra el panel de ultimos movimientos
+Consulta al modelo por ultimos movimientos
+Busca las ultimas 15 transacciones en la BD de la tarjeta 101
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_cliente=1
+Muestra la lista de movimientos
+Muestra una lista con 2 transacciones
+Ejecuta el listener de movimientos por periodo
+Muestra el panel de movimientos por período
+Ejecuta el listener de buscar movimientos por periodo
+Periodo Fri Nov 14 00:00:00 ART 2014 a Tue Nov 30 15:53:33 ART 2021
+Consulta al modelo por ultimos movimientos
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro  WHERE nro_cliente=1 and TIMEDIFF('2021-11-30',fecha)>'00-00-00' AND TIMEDIFF('2014-11-14',fecha)<0
+Muestra la lista de movimientos
+Muestra una lista con 1 transacciones
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Cerrando la sesión.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Creando la ventana de login.
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [p, w, d, E, m, p, 1, 1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(pwdEmp1101)
+SQLException: Unknown column 'pwdEmp1101' in 'where clause'
+SQLState: 42S22
+VendorError: 1054
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [p, w, d, E, m, p, 1, 1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(pwdEmp1101)
+SQLException: Unknown column 'pwdEmp1101' in 'where clause'
+SQLState: 42S22
+VendorError: 1054
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [p, w, d, E, m, p, 1, 1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(pwdEmp1101)
+SQLException: Unknown column 'pwdEmp1101' in 'where clause'
+SQLState: 42S22
+VendorError: 1054
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [p, w, d, E, m, p, 1, 1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(pwdEmp1101)
+SQLException: Unknown column 'pwdEmp1101' in 'where clause'
+SQLState: 42S22
+VendorError: 1054
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [p, w, d, E, m, p, 1, 1, 0, 1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(pwdEmp1101)
+SQLException: Unknown column 'pwdEmp1101' in 'where clause'
+SQLState: 42S22
+VendorError: 1054
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 1 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Muestra una lista con 2 clientes morosos
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 501 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Busca el prestamo número 41
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+Solicita la busqueda de pagos al modelo sobre el prestamo 41.
+Inicia la recuperacion de los pagos del prestamo 41
+sql: SELECT * FROM pago WHERE nro_prestamo = 41
+Se recuperó pago nro 1 para prestamo nro 41
+Se recuperó pago nro 2 para prestamo nro 41
+Se recuperaron 2 pagos
+Muestra una lista con 2 pagos
+Cambia de estado para permitir pagar cuotas
+Solicita pagar cuotas.
+Busca en la tabla las cuotas seleccionadas a pagar
+Se recuperaron 0 cuotas a pagar de la tabla.
+Solicita pagar 0 cuotas del prestamo 41 del cliente DNI 501.
+recupera el cliente con documento de tipo DNI y nro 501.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 501
+Se recuperó cliente que coincide.
+Verifica si el cliente 26 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=26
+Se produjo una excepción Debe seleccionar al menos una cuota a pagar.
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de extracción
+Muestra el panel de gestión de cuotas
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password pwdEmp1101
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password pwdEmp1101
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('pwdEmp1101')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 2 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de nuevo prestamo
+Selecciona el cliente
+Solicita seleccionar un cliente con documento DNI 201 para realizar el préstamo.
+recupera el cliente con documento de tipo DNI y nro 201.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 201
+Se recuperó cliente que coincide.
+Verifica si el cliente 23 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=23
+Cambia de estado para permitir ingresar un monto
+Ingresa un monto para obtener información de un potencial prestamo
+Solicita información sobre un monto.
+Se solicita parsing del monto
+recupera los períodos (cantidad de meses) según el monto 100.0 para el prestamo.
+Se intenta realizar la siguiente consulta SELECT periodo FROM tasa_prestamo WHERE monto_inf <= 100.0 AND monto_sup >= 100.0
+Carga el combo con las cantidad de meses recuperadas. Total 1 items
+Ingresa el item: 1
+Cambia la opcion del mes a 1 con monto 100.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 100.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 100.0 AND monto_sup >= 100.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Cambia de estado para permitir ingresar el período
+Cambia la opcion del mes a 1 con monto 100.
+Solicita obtener información sobre el prestamo.
+Se solicita al modelo validar y parse del monto
+Se solicita al modelo validar y parse de la cantidad de meses
+Busca la tasa correspondiente a el monto 100.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 100.0 AND monto_sup >= 100.0 AND periodo=1
+Cambia de estado para permitir crear el prestamo.
+Solicita la creación de un nuevo prestamo.
+Solicita realizar el prestamo para el cliente DNI:201 de un monto de 100 en un periodo de 1 meses
+recupera el cliente con documento de tipo DNI y nro 201.
+sql: SELECT * FROM cliente WHERE tipo_doc LIKE 'DNI' AND nro_doc = 201
+Se recuperó cliente que coincide.
+Verifica que el cliente 23 no tenga un prestamo vigente.
+Verifica si el cliente 23 tiene algun prestamo que tienen cuotas por pagar.
+Se intenta realizar la siguiente consulta SELECT DISTINCT nro_prestamo FROM (prestamo NATURAL JOIN cliente) NATURAL JOIN pago WHERE fecha_pago IS NULL AND nro_cliente=23
+Busca la tasa, interes y cuota para un prestamo de 100.0 pesos a 1 meses
+Busca la tasa correspondiente a el monto 100.0 con una cantidad de meses 1
+Se intenta realizar la siguiente consulta SELECT tasa FROM tasa_prestamo WHERE monto_inf <= 100.0 AND monto_sup >= 100.0 AND periodo=1
+Crea un nuevo prestamo.
+Actualiza el prestamo con el legajo 1
+Creación o actualizacion del prestamo.
+meses : 1
+monto : 100.0
+tasa : 1.0
+interes : 0.08333333333333333
+cuota : 100.08333333333333
+legajo : 1
+cliente : 23
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.

@@ -46,6 +46,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 		 *				logger.error("VendorError: " + ex.getErrorCode());
 		 *		   pero luego deberá propagarla para que se encargue el controlador. 
 		 */
+		
 
 	}
 
