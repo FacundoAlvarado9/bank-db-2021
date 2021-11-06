@@ -192,8 +192,8 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		String fechaIni="",fechaFin="";
 		
 		//Valido las fechas y las convierto a un formato que entienda SQL.
-		fechaIni=validarFecha(desde);
-		fechaFin=validarFecha(hasta);
+		fechaIni=Fechas.convertirDateAStringDB(desde);
+		fechaFin=Fechas.convertirDateAStringDB(hasta);
 		
 		ArrayList<TransaccionCajaAhorroBean> lista = new ArrayList<TransaccionCajaAhorroBean>();
 		
@@ -225,30 +225,6 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		
 	}
 	
-	
-	//Convierte la fecha recibida a un string que puede leer SQL
-	public String validarFecha(Date fecha) throws Exception {
-		
-		/**
-		 * 
-		 * 
-		 * Cambiar, usar los metodos provistos por la catedra en fechas
-		 * 
-		 * 
-		 */
-		
-		String resp=null;
-		
-		if(fecha==null) {
-			throw new Exception("Error: fecha nula o invalida");
-		}
-			
-		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
-		resp=dateFormat.format(fecha);
-		
-		return resp;
-	}
 	
 	@Override
 	public Double extraer(Double monto) throws Exception {
