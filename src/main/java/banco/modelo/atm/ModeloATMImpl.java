@@ -259,7 +259,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 */	
 		
 		/*
-		 * Nada mas see ve que el dato venga bien de la interface de usuario
+		 * Nada mas se ve que el dato venga bien de la interface de usuario
 		 * Solamente verificar que p_Cuenta no sea nulo ni menor a acero,
 		 * (El cheqeo de que la caja de ahorro exista se va a hacer despues desde el store procedure)
 		 */
@@ -306,12 +306,34 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 * 		Debe generar excepción si las propiedades codigoATM o tarjeta no tienen valores
 		 */		
 		
-
-		String resultado = ModeloATM.TRANSFERENCIA_EXITOSA;
-		
-		if (!resultado.equals(ModeloATM.TRANSFERENCIA_EXITOSA)) {
-			throw new Exception(resultado);
+		if (tarjeta==null ) {
+			throw new Exception("Tarjeta nula");
 		}
+		
+		if (codigoATM==null ) {
+			throw new Exception("codigoATM nulo");
+		}
+		
+		ResultSet rs;
+		String resultado;
+		PreparedStatement update = conexion.prepareCall("CALL procedimiento_transferencia("+caja+","+cajaDestino+","+monto+")");
+
+		try {
+			rs=update.executeQuery();
+			if(rs.next()) {
+				resultado=rs.getString("resultado");
+				if (!resultado.equals(ModeloATM.TRANSFERENCIA_EXITOSA)) {
+					throw new Exception(resultado);
+				}
+			}
+		
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al realizar la transferencia.");
+		}
+		
 		return this.obtenerSaldo();
 	}
 
