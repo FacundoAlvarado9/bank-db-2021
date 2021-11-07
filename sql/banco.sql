@@ -1,10 +1,7 @@
 /*
-
 Integrantes:
-
 	Facundo alvarado,	LU: 125404
 	Tomás Felipe,		LU: 124441
-
 */
 
 
@@ -48,7 +45,7 @@ CREATE TABLE sucursal(
 	CONSTRAINT primary_key_sucursal
 	PRIMARY KEY(nro_suc),
 	
-	CONSTRAINT foreign_key_Sucursal_cod_postal
+	CONSTRAINT fk_sucursal_CP
 	FOREIGN KEY (cod_postal) REFERENCES ciudad(cod_postal)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -77,7 +74,7 @@ CREATE TABLE empleado(
 	PRIMARY KEY(legajo),
 	
 
-	CONSTRAINT foreign_key_Empleado_nro_suc
+	CONSTRAINT fk_empleado_NS
 	FOREIGN KEY (nro_suc) REFERENCES sucursal(nro_suc)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -122,7 +119,7 @@ CREATE TABLE plazo_fijo(
 	CONSTRAINT primary_key_plazo_fijo
 	PRIMARY KEY(nro_plazo),
 	
-	CONSTRAINT foreign_key_plazo_fijo_nro_suc
+	CONSTRAINT fk_plazoFijo_NS
 	FOREIGN KEY (nro_suc) REFERENCES sucursal(nro_suc)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -154,11 +151,11 @@ CREATE TABLE plazo_cliente(
 	CONSTRAINT primary_key_plazo_cliente
 	PRIMARY KEY(nro_plazo,nro_cliente),
 	
-	#CONSTRAINT fk_plazoCliente_NP
+	CONSTRAINT fk_plazoCliente_NP
 	FOREIGN KEY (nro_plazo) REFERENCES plazo_fijo(nro_plazo)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_plazoCliente_NC
+	CONSTRAINT fk_plazoCliente_NC
 	FOREIGN KEY (nro_cliente) REFERENCES cliente(nro_cliente)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -184,11 +181,11 @@ CREATE TABLE prestamo(
 	CONSTRAINT primary_key_prestamo
 	PRIMARY KEY(nro_prestamo),
 	
-	#CONSTRAINT fk_prestamo_l
+	CONSTRAINT fk_prestamo_l
 	FOREIGN KEY (legajo) REFERENCES empleado(legajo)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_prestamo_NC
+	CONSTRAINT fk_prestamo_NC
 	FOREIGN KEY (nro_cliente) REFERENCES cliente(nro_cliente)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -207,7 +204,7 @@ CREATE TABLE pago(
 	CONSTRAINT primary_key_pago
 	PRIMARY KEY(nro_prestamo,nro_pago),
 	
-	#CONSTRAINT fk_pago_NP
+	CONSTRAINT fk_pago_NP
 	FOREIGN KEY (nro_prestamo) REFERENCES prestamo(nro_prestamo)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -255,11 +252,11 @@ CREATE TABLE cliente_ca(
 	CONSTRAINT primary_key_cliente_ca
 	PRIMARY KEY(nro_cliente,nro_ca),
 
-	#CONSTRAINT fk_clienteCA_NCl
+	CONSTRAINT fk_clienteCA_NCl
 	FOREIGN KEY (nro_cliente) REFERENCES cliente(nro_cliente)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_clienteCA_NCa
+	CONSTRAINT fk_clienteCA_NCa
 	FOREIGN KEY (nro_ca) REFERENCES caja_ahorro(nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 
@@ -283,7 +280,7 @@ CREATE TABLE tarjeta(
 	CONSTRAINT primary_key_tarjeta
 	PRIMARY KEY(nro_tarjeta),
 	
-	#CONSTRAINT fk_tarjeta
+	CONSTRAINT fk_tarjeta
 	FOREIGN KEY (nro_cliente,nro_ca) REFERENCES cliente_ca(nro_cliente,nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -312,11 +309,11 @@ CREATE TABLE ventanilla(
 	CONSTRAINT primary_key_ventanilla
 	PRIMARY KEY(cod_caja),
 	
-	#CONSTRAINT fk_ventanilla_CC
+	CONSTRAINT fk_ventanilla_CC
 	FOREIGN KEY (cod_caja) REFERENCES caja(cod_caja)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_ventanilla_NS
+	CONSTRAINT fk_ventanilla_NS
 	FOREIGN KEY (nro_suc) REFERENCES sucursal(nro_suc)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -335,11 +332,11 @@ CREATE TABLE atm(
 	CONSTRAINT primary_key_atm
 	PRIMARY KEY(cod_caja),
 	
-	#CONSTRAINT fk_atm_CC
+	CONSTRAINT fk_atm_CC
 	FOREIGN KEY (cod_caja) REFERENCES caja(cod_caja)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_atm_CP
+	CONSTRAINT fk_atm_CP
 	FOREIGN KEY (cod_postal) REFERENCES ciudad(cod_postal)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -375,11 +372,11 @@ CREATE TABLE debito(
 	CONSTRAINT primary_key_debito
 	PRIMARY KEY(nro_trans),
 	
-	#CONSTRAINT fk_debito_NT
+	CONSTRAINT fk_debito_NT
 	FOREIGN KEY (nro_trans) REFERENCES transaccion(nro_trans)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_debito_NC
+	CONSTRAINT fk_debito_NC
 	FOREIGN KEY (nro_cliente,nro_ca) REFERENCES cliente_ca(nro_cliente,nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -396,11 +393,11 @@ CREATE TABLE transaccion_por_caja(
 	CONSTRAINT primary_key_transaccion_por_caja
 	PRIMARY KEY(nro_trans),
 	
-	#CONSTRAINT fk_transCaja_NT
+	CONSTRAINT fk_transCaja_NT
 	FOREIGN KEY (nro_trans) REFERENCES transaccion(nro_trans)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_transCaja_CC
+	CONSTRAINT fk_transCaja_CC
 	FOREIGN KEY (cod_caja) REFERENCES caja(cod_caja)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -418,11 +415,11 @@ CREATE TABLE deposito(
 	CONSTRAINT primary_key_deposito
 	PRIMARY KEY(nro_trans),
 	
-	#CONSTRAINT fk_deposito_NT
+	CONSTRAINT fk_deposito_NT
 	FOREIGN KEY (nro_trans) REFERENCES transaccion_por_caja(nro_trans)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_deposito_NC
+	CONSTRAINT fk_deposito_NC
 	FOREIGN KEY (nro_ca) REFERENCES caja_ahorro(nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -441,11 +438,11 @@ CREATE TABLE extraccion(
 	CONSTRAINT primary_key_extraccion
 	PRIMARY KEY(nro_trans),
 	
-	#CONSTRAINT fk_extraccion_NT
+	CONSTRAINT fk_extraccion_NT
 	FOREIGN KEY (nro_trans) REFERENCES transaccion_por_caja(nro_trans)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_extraccion_NC
+	CONSTRAINT fk_extraccion_NC
 	FOREIGN KEY (nro_cliente,nro_ca) REFERENCES cliente_ca(nro_cliente,nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -466,15 +463,15 @@ CREATE TABLE transferencia(
 	CONSTRAINT primary_key_transferencia
 	PRIMARY KEY(nro_trans),
 	
-	#CONSTRAINT fk_transferencia_NT
+	CONSTRAINT fk_transferencia_NT
 	FOREIGN KEY (nro_trans) REFERENCES transaccion_por_caja(nro_trans)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_transferencia_NC
+	CONSTRAINT fk_transferencia_NC
 	FOREIGN KEY (nro_cliente,origen) REFERENCES cliente_ca(nro_cliente,nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE,
 	
-	#CONSTRAINT fk_transferencia_NC2
+	CONSTRAINT fk_transferencia_NC2
 	FOREIGN KEY (destino) REFERENCES caja_ahorro(nro_ca)
 	ON DELETE RESTRICT ON UPDATE CASCADE
 	
@@ -485,35 +482,40 @@ CREATE TABLE transferencia(
 #Creacion de vistas -------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE VIEW ca_datos_cli AS
+	SELECT * FROM (caja_ahorro NATURAL JOIN cliente_ca) NATURAL JOIN cliente;
 
+CREATE VIEW transaccion_datos_nro_caja AS
+	SELECT * FROM transaccion NATURAL JOIN transaccion_por_caja;
 
 CREATE VIEW debito_caja_ahorro AS 
- SELECT nro_ca, saldo, nro_trans, fecha, hora, "debito" AS tipo,monto, NULL AS cod_caja,
-       nro_cliente, tipo_doc, nro_doc, nombre, apellido, NULL AS destino
- 	FROM ((debito NATURAL JOIN cliente) NATURAL JOIN caja_ahorro) NATURAL JOIN transaccion;
+ SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, debito.nro_trans, transaccion.fecha, transaccion.hora, "debito" AS tipo, transaccion.monto, NULL AS cod_caja,
+       ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, NULL AS destino
+ 	FROM (debito JOIN ca_datos_cli ON debito.nro_cliente = ca_datos_cli.nro_cliente AND debito.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion ON debito.nro_trans = transaccion.nro_trans;
 
 CREATE VIEW extraccion_caja_ahorro AS
-	SELECT nro_ca,saldo, nro_trans, fecha, hora, "extraccion" AS tipo,monto, cod_caja,
-       nro_cliente, tipo_doc, nro_doc, nombre, apellido, NULL AS destino
- 	FROM (((extraccion NATURAL JOIN transaccion_por_caja) NATURAL JOIN cliente) NATURAL JOIN caja_ahorro) NATURAL JOIN transaccion;
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, extraccion.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "extraccion" AS tipo, 
+		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja,
+    ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, NULL AS destino
+ 	FROM (extraccion JOIN ca_datos_cli ON extraccion.nro_cliente = ca_datos_cli.nro_cliente AND extraccion.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON extraccion.nro_trans = transaccion_datos_nro_caja.nro_trans;
 
 CREATE VIEW deposito_caja_ahorro AS
-	SELECT nro_ca, saldo, nro_trans, fecha, hora, "deposito" AS tipo,monto, cod_caja,
-       NULL AS nro_cliente, NULL AS tipo_doc, NULL AS nro_doc, NULL AS nombre, NULL AS apellido, NULL AS destino
- 	FROM (((deposito NATURAL JOIN transaccion_por_caja) NATURAL JOIN cliente) NATURAL JOIN caja_ahorro) NATURAL JOIN transaccion;
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, deposito.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "deposito" AS tipo,
+		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja, NULL AS nro_cliente, NULL AS tipo_doc, NULL AS nro_doc, NULL AS nombre, NULL AS apellido, NULL AS destino
+ 	FROM (deposito JOIN ca_datos_cli ON deposito.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON deposito.nro_trans = transaccion_datos_nro_caja.nro_trans;
 
 CREATE VIEW transferencia_caja_ahorro AS
- SELECT nro_ca, saldo, nro_trans, fecha, hora,"transferencia" as tipo,monto, cod_caja,
-       nro_cliente, tipo_doc, nro_doc, nombre, apellido, destino
- 	FROM (((transferencia NATURAL JOIN transaccion_por_caja) NATURAL JOIN cliente) NATURAL JOIN caja_ahorro) NATURAL JOIN transaccion;
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, transferencia.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "transferencia" as tipo,
+		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja, ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, 
+		ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, transferencia.destino
+	FROM (transferencia JOIN ca_datos_cli ON transferencia.origen = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON transferencia.nro_trans = transaccion_datos_nro_caja.nro_trans;
+
 
 CREATE VIEW trans_cajas_ahorro AS
 	(SELECT * FROM debito_caja_ahorro) UNION 
 	(SELECT * FROM extraccion_caja_ahorro) UNION 
 	(SELECT * FROM transferencia_caja_ahorro) UNION 
 	(Select * from deposito_caja_ahorro);
-
-
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------------------------
 #Creación de procedimientos -----------------------------------------------------------------------------------------------------------------------------
