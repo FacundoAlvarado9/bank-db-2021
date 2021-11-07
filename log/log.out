@@ -86,3 +86,1193 @@ Saliendo de la aplicación.
 Se desconecta la conexión a la BD.
 Se intenta cerrar la conexión activa
 Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de ultimos movimientos
+Muestra el panel de ultimos movimientos
+Consulta al modelo por ultimos movimientos
+Busca las ultimas 15 transacciones en la BD de la tarjeta 101
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_cliente=1
+Muestra la lista de movimientos
+Muestra una lista con 2 transacciones
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de extracción
+Muestra el panel de extracción
+Ejecuta el listener de ultimos movimientos
+Muestra el panel de ultimos movimientos
+Consulta al modelo por ultimos movimientos
+Busca las ultimas 15 transacciones en la BD de la tarjeta 101
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_cliente=1
+Muestra la lista de movimientos
+Muestra una lista con 2 transacciones
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+Se intenta realizar la siguiente consulta CALL procedimiento_transferencia(14,2,1000.0)
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+SQLException: Before start of result set
+SQLState: S1000
+VendorError: 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+SQLException: Before start of result set
+SQLState: S1000
+VendorError: 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 101
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 101
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 101
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $101.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+SQLException: execute command denied to user 'atm'@'%' for routine 'banco.procedimiento_transferencia'
+SQLState: 42000
+VendorError: 1370
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+SQLException: Before start of result set
+SQLState: S1000
+VendorError: 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+SQLException: Before start of result set
+SQLState: S1000
+VendorError: 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+SQLException: Before start of result set
+SQLState: S1000
+VendorError: 0
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 2
+Intenta realizar el parsing de un codigo de cuenta 1000000
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $2.0 sobre a la cuenta 1000000
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 10000000000000000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0E16 sobre a la cuenta 2
+SQLException: Data truncation: Out of range value for column 'monto' at row 1
+SQLState: 22001
+VendorError: 1264
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 10000000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0E7 sobre a la cuenta 2
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1000
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1000.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 100
+Intenta realizar el parsing de un codigo de cuenta 2
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $100.0 sobre a la cuenta 2
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de transferencia
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la transferencia
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 1
+Intenta realizar el parsing de un codigo de cuenta 5
+Se solicita al usuario la confirmación de la transferencia
+Selecciono la opcion 0
+Realiza la transferencia de $1.0 sobre a la cuenta 5
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM trans_cajas_ahorro where nro_ca=14
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
