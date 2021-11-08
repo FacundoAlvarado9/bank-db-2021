@@ -524,7 +524,7 @@ CREATE VIEW trans_cajas_ahorro AS
 
 delimiter !
 
-CREATE PROCEDURE procedimiento_transferencia(IN nro_ca_origen INT,IN nro_ca_destino INT,IN monto DECIMAL(16,2))
+CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM MEDIUMINT,IN nro_ca_origen INT,IN nro_ca_destino INT,IN monto DECIMAL(16,2))
 	BEGIN
 	
 		DECLARE saldo_origen DECIMAL(16,2);
@@ -540,15 +540,28 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_ca_origen INT,IN nro_ca_dest
 			IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_origen) AND
 				EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_destino) THEN
 			
-				#Guardo el saldo actual y hago un bloqueo exclusivo sobre la caja de ahorro
-				SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE nro_ca = nro_ca_origen FOR UPDATE;
+				IF EXISTS (SELECT * FROM caja WHERE cod_caja=cod_ATM) THEN
 			
-				IF saldo_origen >= monto THEN
-					UPDATE caja_ahorro SET saldo = saldo - monto WHERE nro_ca=nro_ca_origen;
-					UPDATE caja_ahorro SET saldo = saldo + monto WHERE nro_ca=nro_ca_destino;
-					SELECT 'Transferencia Exitosa' AS resultado;
+					#Guardo el saldo actual y hago un bloqueo exclusivo sobre la caja de ahorro
+					SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE nro_ca = nro_ca_origen FOR UPDATE;
+				
+					IF saldo_origen >= monto THEN
+						UPDATE caja_ahorro SET saldo = saldo - monto WHERE nro_ca=nro_ca_origen;
+						UPDATE caja_ahorro SET saldo = saldo + monto WHERE nro_ca=nro_ca_destino;
+						SELECT 'Transferencia Exitosa' AS resultado;
+						
+						#Inserto la nueva transaccion en la base de datos
+						INSERT INTO transaccion VALUES(NULL,CURDATE(),CURTIME(),monto);
+		
+						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
+		
+						INSERT INTO transferencia VALUES(LAST_INSERT_ID(),nro_liente,nro_ca_origen,nro_ca_destino);
+						
+					ELSE
+						SELECT 'Saldo insuficiente para realizar la transferencia' AS resultado;
+					END IF;
 				ELSE
-					SELECT 'Saldo insuficiente para realizar la transferencia' AS resultado;
+					SELECT 'El codigo de cajero no es valido' AS resultado;
 				END IF;
 			ELSE
 				SELECT 'Error: Alguna de las cajas de ahorro ingresadas no existe' AS resultado;
