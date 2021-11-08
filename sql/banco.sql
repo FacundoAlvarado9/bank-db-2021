@@ -543,7 +543,7 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 				IF EXISTS (SELECT * FROM caja WHERE cod_caja=cod_ATM) THEN
 
 					#Guardo el saldo actual y hago un bloqueo exclusivo sobre la caja de ahorro
-					SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE cod_ATM = cod_ATM FOR UPDATE;
+                    SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE nro_ca = nro_ca_origen FOR UPDATE;
 
 					IF saldo_origen >= monto THEN
 						UPDATE caja_ahorro SET saldo = saldo - monto WHERE nro_ca=nro_ca_origen;
@@ -570,7 +570,7 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 
 	END; !
 
-CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_ahorro_a_extraer INT, IN monto_a_extraer DECIMAL(16,2), IN cod_caja INT, IN nro_cliente_ext INT)
+CREATE PROCEDURE procedimiento_extraccion(IN nro_cliente_ext INT, IN cod_ATM INT, IN nro_ca_ahorro_a_extraer INT, IN monto_a_extraer DECIMAL(16,2))
     BEGIN
 
         DECLARE saldo_original DECIMAL(16,2);
@@ -583,7 +583,7 @@ CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_ahorro_a_extraer INT, IN mon
             END;
 
         START TRANSACTION;
-            IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_ahorro_a_extraer) THEN
+            IF EXISTS (SELECT * FROM caja_ahorro NATURAL JOIN cliente_ca WHERE nro_ca=nro_ca_ahorro_a_extraer AND nro_cliente=nro_cliente_ext) THEN
 
                 #Guardo el saldo original y hago bloqueo de la caja de ahorropara update
                 SELECT saldo INTO saldo_original FROM caja_ahorro WHERE nro_ca = nro_ca_ahorro_a_extraer FOR UPDATE;
@@ -600,8 +600,8 @@ CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_ahorro_a_extraer INT, IN mon
                     SELECT last_insert_id() INTO nro_transaccion;
 
                     #Con él lo ingreso en las transacciones por caja y en las extracciones.
-                    INSERT INTO transaccion_por_caja VALUES(nro_transaccion, cod_caja);
-                    INSERT INTO extraccion VALUES(nro_transaccion, nro_cliente_ext, cod_caja);
+                    INSERT INTO transaccion_por_caja VALUES(nro_transaccion, cod_ATM);
+                    INSERT INTO extraccion VALUES(nro_transaccion, nro_cliente_ext, nro_ca_ahorro_a_extraer);
 
 
                     SELECT 'Transferencia exitosa' AS resultado;
