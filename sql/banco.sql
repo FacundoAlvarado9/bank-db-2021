@@ -543,7 +543,7 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 				IF EXISTS (SELECT * FROM caja WHERE cod_caja=cod_ATM) THEN
 
 					#Guardo el saldo actual y hago un bloqueo exclusivo sobre la caja de ahorro
-                    SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE nro_ca = nro_ca_origen FOR UPDATE;
+                    SELECT saldo INTO saldo_origen FROM caja_ahorro NATURAL JOIN cliente_ca WHERE nro_ca = nro_ca_origen AND nro_cliente = nro_liente FOR UPDATE;
 
 					IF saldo_origen >= monto THEN
 						UPDATE caja_ahorro SET saldo = saldo - monto WHERE nro_ca=nro_ca_origen;
