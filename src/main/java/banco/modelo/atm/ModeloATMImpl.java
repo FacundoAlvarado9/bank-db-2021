@@ -316,7 +316,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		
 		ResultSet rs;
 		String resultado;
-		PreparedStatement update = conexion.prepareCall("CALL procedimiento_transferencia("+caja+","+cajaDestino+","+monto+")");
+		PreparedStatement update = conexion.prepareCall("CALL procedimiento_transferencia("+cliente+","+codigoATM+","+caja+","+cajaDestino+","+monto+")");
 
 		try {
 			rs=update.executeQuery();
