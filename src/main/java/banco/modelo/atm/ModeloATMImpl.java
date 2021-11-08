@@ -234,15 +234,30 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 * TODO Deberá extraer de la cuenta del cliente el monto especificado (ya validado) y de obtener el saldo de la cuenta como resultado.
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 * 		Debe generar excepción si las propiedades codigoATM o tarjeta no tienen valores
-		 */		
-		
-		String resultado = ModeloATM.EXTRACCION_EXITOSA;
-		
-		if (!resultado.equals(ModeloATM.EXTRACCION_EXITOSA)) {
-			throw new Exception(resultado);
-		}
-		return this.obtenerSaldo();
+		 */
 
+		ResultSet rs;
+		String resultado;
+		System.out.println("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
+		PreparedStatement update = conexion.prepareCall("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
+
+		try {
+			rs=update.executeQuery();
+			if(rs.next()) {
+				resultado=rs.getString("resultado");
+				if (!resultado.equals(ModeloATM.EXTRACCION_EXITOSA)) {
+					throw new Exception(resultado);
+				}
+			}
+
+		} catch(SQLException ex) {
+			logger.error("SQLException: " + ex.getMessage());
+			logger.error("SQLState: " + ex.getSQLState());
+			logger.error("VendorError: " + ex.getErrorCode());
+			throw new Exception("Error al realizar extraccion.");
+		}
+
+		return this.obtenerSaldo();
 	}
 
 	
