@@ -604,7 +604,7 @@ CREATE PROCEDURE procedimiento_extraccion(IN nro_cliente_ext INT, IN cod_ATM INT
                     INSERT INTO extraccion VALUES(nro_transaccion, nro_cliente_ext, nro_ca_ahorro_a_extraer);
 
 
-                    SELECT 'Transferencia exitosa' AS resultado;
+                    SELECT 'Extracción exitosa' AS resultado;
                 ELSE
                     SELECT 'Saldo insuficiente para realizar la extración' AS resultado;
                 END IF;
