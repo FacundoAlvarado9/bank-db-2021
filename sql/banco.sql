@@ -489,23 +489,23 @@ CREATE VIEW transaccion_datos_nro_caja AS
 	SELECT * FROM transaccion NATURAL JOIN transaccion_por_caja;
 
 CREATE VIEW debito_caja_ahorro AS 
- SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, debito.nro_trans, transaccion.fecha, transaccion.hora, "debito" AS tipo, transaccion.monto, NULL AS cod_caja,
+ SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, debito.nro_trans, transaccion.fecha, transaccion.hora, 'debito' AS tipo, transaccion.monto, NULL AS cod_caja,
        ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, NULL AS destino
  	FROM (debito JOIN ca_datos_cli ON debito.nro_cliente = ca_datos_cli.nro_cliente AND debito.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion ON debito.nro_trans = transaccion.nro_trans;
 
 CREATE VIEW extraccion_caja_ahorro AS
-	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, extraccion.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "extraccion" AS tipo, 
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, extraccion.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, 'extraccion' AS tipo,
 		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja,
     ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, NULL AS destino
  	FROM (extraccion JOIN ca_datos_cli ON extraccion.nro_cliente = ca_datos_cli.nro_cliente AND extraccion.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON extraccion.nro_trans = transaccion_datos_nro_caja.nro_trans;
 
 CREATE VIEW deposito_caja_ahorro AS
-	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, deposito.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "deposito" AS tipo,
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, deposito.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, 'deposito' AS tipo,
 		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja, NULL AS nro_cliente, NULL AS tipo_doc, NULL AS nro_doc, NULL AS nombre, NULL AS apellido, NULL AS destino
  	FROM (deposito JOIN ca_datos_cli ON deposito.nro_ca = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON deposito.nro_trans = transaccion_datos_nro_caja.nro_trans;
 
 CREATE VIEW transferencia_caja_ahorro AS
-	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, transferencia.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, "transferencia" as tipo,
+	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, transferencia.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, 'transferencia' as tipo,
 		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja, ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc, 
 		ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, transferencia.destino
 	FROM (transferencia JOIN ca_datos_cli ON transferencia.origen = ca_datos_cli.nro_ca) JOIN transaccion_datos_nro_caja ON transferencia.nro_trans = transaccion_datos_nro_caja.nro_trans;
@@ -531,7 +531,7 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 		
 		DECLARE EXIT HANDLER FOR SQLEXCEPTION
 			BEGIN #Si se produce una sqlexception hace rollback
-				SELECT 'SQLEXCEPTION!, transacción abortada' AS resultado; 
+				SELECT 'SQLEXCEPTION, transacción abortada' AS resultado;
 				ROLLBACK;
 			END;
 		
@@ -569,6 +569,37 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 		COMMIT;	
 		
 	END; !
+
+CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_a_extraer INT, IN monto DECIMAL(16,2))
+    BEGIN
+
+        DECLARE saldo_original DECIMAL(16,2);
+
+        DECLARE EXIT HANDLER FOR SQLEXCEPTION
+            BEGIN
+                SELECT 'SQLEXCEPTION, transacción abortada' AS resultado;
+                ROLLBACK;
+            END;
+
+        START TRANSACTION;
+            IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_a_extraer) THEN
+
+                #Guardo el saldo original y hago bloqueo de la caja de ahorropara update
+                SELECT saldo INTO saldo_original FROM caja_ahorro WHERE nro_ca = nro_ca_a_extraer FOR UPDATE;
+
+                IF saldo_original >= monto THEN
+                    UPDATE caja_ahorro SET saldo = saldo_original - monto WHERE nro_ca = nro_ca_a_extraer;
+                    SELECT 'Transferencia exitosa' AS resultado;
+                ELSE
+                    SELECT 'Saldo insuficiente para realizar la extración' AS resultado;
+                END IF;
+
+            ELSE
+                SELECT 'Error: La caja ingresada no existe' AS resultado;
+            END IF;
+        COMMIT;
+
+    END; !
 
 delimiter ;
 
