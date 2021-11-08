@@ -565,6 +565,9 @@ INSERT INTO caja VALUES(8);
 INSERT INTO caja VALUES(9);
 INSERT INTO caja VALUES(10);
 
+#Para el ATM de la GUI
+INSERT INTO caja VALUES(100);
+
 
 /*
 Insert de ventanillas-------------------------------------------------------------------------------------------------------
@@ -585,6 +588,9 @@ Insert de ATMs------------------------------------------------------------------
 */
 INSERT INTO atm(cod_caja,cod_postal,direccion)
 	SELECT cod_caja,cod_postal,direccion FROM ventanilla NATURAL JOIN sucursal;
+
+#Para el ATM de la GUI
+INSERT INTO atm(cod_caja, cod_postal, direccion) VALUES(100, 1000, "Calle Falsa 123");
 
 /*
 Insert de Transaccion-------------------------------------------------------------------------------------------------------
