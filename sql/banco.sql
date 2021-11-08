@@ -526,37 +526,37 @@ delimiter !
 
 CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM MEDIUMINT,IN nro_ca_origen INT,IN nro_ca_destino INT,IN monto DECIMAL(16,2))
 	BEGIN
-	
+
 		DECLARE saldo_origen DECIMAL(16,2);
-		
+
 		DECLARE EXIT HANDLER FOR SQLEXCEPTION
 			BEGIN #Si se produce una sqlexception hace rollback
 				SELECT 'SQLEXCEPTION, transacción abortada' AS resultado;
 				ROLLBACK;
 			END;
-		
+
 		START TRANSACTION;
-			#Chequeo que ambas cajas de ahorro existan 
+			#Chequeo que ambas cajas de ahorro existan
 			IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_origen) AND
 				EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_destino) THEN
-			
+
 				IF EXISTS (SELECT * FROM caja WHERE cod_caja=cod_ATM) THEN
-			
+
 					#Guardo el saldo actual y hago un bloqueo exclusivo sobre la caja de ahorro
-					SELECT saldo INTO caja FROM caja_ahorro WHERE cod_caja = cod_ATM FOR UPDATE;
-				
+					SELECT saldo INTO saldo_origen FROM caja_ahorro WHERE cod_ATM = cod_ATM FOR UPDATE;
+
 					IF saldo_origen >= monto THEN
 						UPDATE caja_ahorro SET saldo = saldo - monto WHERE nro_ca=nro_ca_origen;
 						UPDATE caja_ahorro SET saldo = saldo + monto WHERE nro_ca=nro_ca_destino;
 						SELECT 'Transferencia Exitosa' AS resultado;
-						
+
 						#Inserto la nueva transaccion en la base de datos
 						INSERT INTO transaccion VALUES(NULL,CURDATE(),CURTIME(),monto);
-		
+
 						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
-		
+
 						INSERT INTO transferencia VALUES(LAST_INSERT_ID(),nro_liente,nro_ca_origen,nro_ca_destino);
-						
+
 					ELSE
 						SELECT 'Saldo insuficiente para realizar la transferencia' AS resultado;
 					END IF;
@@ -566,14 +566,15 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 			ELSE
 				SELECT 'Error: Alguna de las cajas de ahorro ingresadas no existe' AS resultado;
 			END IF;
-		COMMIT;	
-		
+		COMMIT;
+
 	END; !
 
-CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_a_extraer INT, IN monto DECIMAL(16,2))
+CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_ahorro_a_extraer INT, IN monto_a_extraer DECIMAL(16,2), IN cod_caja INT, IN nro_cliente_ext INT)
     BEGIN
 
         DECLARE saldo_original DECIMAL(16,2);
+        DECLARE nro_transaccion INT;
 
         DECLARE EXIT HANDLER FOR SQLEXCEPTION
             BEGIN
@@ -582,13 +583,27 @@ CREATE PROCEDURE procedimiento_extraccion(IN nro_ca_a_extraer INT, IN monto DECI
             END;
 
         START TRANSACTION;
-            IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_a_extraer) THEN
+            IF EXISTS (SELECT * FROM caja_ahorro WHERE nro_ca=nro_ca_ahorro_a_extraer) THEN
 
                 #Guardo el saldo original y hago bloqueo de la caja de ahorropara update
-                SELECT saldo INTO saldo_original FROM caja_ahorro WHERE nro_ca = nro_ca_a_extraer FOR UPDATE;
+                SELECT saldo INTO saldo_original FROM caja_ahorro WHERE nro_ca = nro_ca_ahorro_a_extraer FOR UPDATE;
 
-                IF saldo_original >= monto THEN
-                    UPDATE caja_ahorro SET saldo = saldo_original - monto WHERE nro_ca = nro_ca_a_extraer;
+                IF saldo_original >= monto_a_extraer THEN
+
+                    #Resto del saldo de la caja_ahorro el monto de la extraccion
+                    UPDATE caja_ahorro SET saldo = saldo_original - monto_a_extraer WHERE nro_ca = nro_ca_ahorro_a_extraer;
+
+                    #Ingreso la extracción en la tabla de transacciones
+                    INSERT INTO transaccion (fecha, hora, monto) VALUES(CURDATE(), CURTIME(), monto_a_extraer);
+
+                    #Me hago del nro_trans con el procedimiento last_insert_id()
+                    SELECT last_insert_id() INTO nro_transaccion;
+
+                    #Con él lo ingreso en las transacciones por caja y en las extracciones.
+                    INSERT INTO transaccion_por_caja VALUES(nro_transaccion, cod_caja);
+                    INSERT INTO extraccion VALUES(nro_transaccion, nro_cliente_ext, cod_caja);
+
+
                     SELECT 'Transferencia exitosa' AS resultado;
                 ELSE
                     SELECT 'Saldo insuficiente para realizar la extración' AS resultado;
