@@ -182,7 +182,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			throws Exception {
 
 		/**
-		 * TODO Deberá recuperar los ultimos del cliente que se han realizado entre las fechas indicadas.
+		 * TODO (hecho) Deberá recuperar los ultimos del cliente que se han realizado entre las fechas indicadas.
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 * 		Debe generar excepción sin las fechas son erroneas (ver descripción en interface)
 		 */
@@ -234,11 +234,19 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		logger.info("Realiza la extraccion de ${} sobre la cuenta", monto);
 		
 		/**
-		 * TODO Deberá extraer de la cuenta del cliente el monto especificado (ya validado) y de obtener el saldo de la cuenta como resultado.
+		 * TODO (hecho) Deberá extraer de la cuenta del cliente el monto especificado (ya validado) y de obtener el saldo de la cuenta como resultado.
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 * 		Debe generar excepción si las propiedades codigoATM o tarjeta no tienen valores
 		 */
 
+		if (tarjeta==null ) {
+			throw new Exception("Tarjeta nula");
+		}
+		
+		if (codigoATM==null ) {
+			throw new Exception("codigoATM nulo");
+		}
+		
 		ResultSet rs;
 		String resultado;
 		System.out.println("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
@@ -248,7 +256,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			rs=update.executeQuery();
 			if(rs.next()) {
 				saldo=this.obtenerSaldo();
-				resultado=rs.getString("resultado")+"Su saldo actual es: $"+saldo;
+				resultado=rs.getString("resultado")+",Su saldo actual es: $"+saldo;
 				if (!resultado.equals(ModeloATM.EXTRACCION_EXITOSA)) {
 					throw new Exception(resultado);
 				}
@@ -320,7 +328,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		logger.info("Realiza la transferencia de ${} sobre a la cuenta {}", monto, cajaDestino);
 		
 		/**
-		 * TODO Deberá extraer de la cuenta del cliente el monto especificado (ya validado) y de obtener el saldo de la cuenta como resultado.
+		 * TODO (hecho) Deberá extraer de la cuenta del cliente el monto especificado (ya validado) y de obtener el saldo de la cuenta como resultado.
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 * 		Debe generar excepción si las propiedades codigoATM o tarjeta no tienen valores
 		 */		
