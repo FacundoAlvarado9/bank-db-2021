@@ -6694,3 +6694,15 @@ Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca 
 SQLException: Unknown column 'dfdg' in 'where clause'
 SQLState: 42S22
 VendorError: 1054
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
