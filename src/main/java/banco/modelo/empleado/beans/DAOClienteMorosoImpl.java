@@ -33,7 +33,7 @@ public class DAOClienteMorosoImpl implements DAOClienteMoroso {
 		DAOCliente daoCliente = new DAOClienteImpl(this.conexion);
 		
 		/**
-		 * TODO (OK) Deberá recuperar un listado de clientes morosos los cuales consisten de un bean ClienteMorosoBeanImpl
+		 * TODO (hecho) Deberá recuperar un listado de clientes morosos los cuales consisten de un bean ClienteMorosoBeanImpl
 		 *      deberá indicar para dicho cliente cual es el prestamo sobre el que está moroso y la cantidad de cuotas que 
 		 *      tiene atrasadas. En todos los casos deberá generar excepciones que será capturadas por el controlador
 		 *      si hay algún error que necesita ser informado al usuario. 

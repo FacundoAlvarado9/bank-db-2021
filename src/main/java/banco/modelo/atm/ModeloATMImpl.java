@@ -59,7 +59,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		logger.info("Se intenta autenticar la tarjeta {} con pin {}", tarjeta, pin);
 
 		/** 
-		 * TODO Código que autentica que exista una tarjeta con ese pin (el pin guardado en la BD está en MD5)
+		 * TODO (hecho) Código que autentica que exista una tarjeta con ese pin (el pin guardado en la BD está en MD5)
 		 *      En caso exitoso deberá registrar la tarjeta en la propiedad tarjeta y retornar true.
 		 *      Si la autenticación no es exitosa porque no coincide el pin o la tarjeta no existe deberá retornar falso
 		 *      y si hubo algún otro error deberá producir una excepción.

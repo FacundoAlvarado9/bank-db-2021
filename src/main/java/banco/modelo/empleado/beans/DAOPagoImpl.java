@@ -24,7 +24,7 @@ public class DAOPagoImpl implements DAOPago {
 		logger.info("Inicia la recuperacion de los pagos del prestamo {}", nroPrestamo);
 
 		/**
-		 * TODO Recupera todos los pagos del prestamo (pagos e impagos) del prestamo nroPrestamo
+		 * TODO (hecho) Recupera todos los pagos del prestamo (pagos e impagos) del prestamo nroPrestamo
 		 * 	    Si ocurre algún error deberá propagar una excepción.
 		 */
 
@@ -66,7 +66,7 @@ public class DAOPagoImpl implements DAOPago {
 		logger.info("Inicia el pago de las {} cuotas del prestamo {}", cuotasAPagar.size(), nroPrestamo);
 
 		/**
-		 * TODO Registra los pagos de cuotas definidos en cuotasAPagar.
+		 * TODO (hecho) Registra los pagos de cuotas definidos en cuotasAPagar.
 		 *
 		 * nroCliente asume que esta validado
 		 * nroPrestamo asume que está validado

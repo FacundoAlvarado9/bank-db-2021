@@ -25,9 +25,9 @@ public class DAOEmpleadoImpl implements DAOEmpleado {
 		logger.info("recupera el empleado que corresponde al legajo {}.", legajo);
 		
 		/**
-		 * TODO Debe recuperar los datos del empleado que corresponda al legajo pasado como parámetro.
+		 * TODO (hecho) Debe recuperar los datos del empleado que corresponda al legajo pasado como parámetro.
 		 *      Si no existe deberá retornar null y 
-		 *      De ocurre algun error deberá generar una excepción.		 * 
+		 *      De ocurrir algun error deberá generar una excepción.		 
 		 */		
 		
 		String sql = "SELECT * FROM empleado WHERE legajo=" + legajo;

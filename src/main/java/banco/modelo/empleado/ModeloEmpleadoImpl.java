@@ -48,7 +48,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 	public boolean autenticarUsuarioAplicacion(String legajo, String password) throws Exception {
 		logger.info("Se intenta autenticar el legajo {} con password {}", legajo, password);
 		/** 
-		 * TODO Código que autentica que exista un legajo de empleado y que el password corresponda a ese legajo
+		 * TODO (hecho) Código que autentica que exista un legajo de empleado y que el password corresponda a ese legajo
 		 *      (el password guardado en la BD está en MD5) 
 		 *      En caso exitoso deberá registrar el legajo en la propiedad legajo y retornar true.
 		 *      Si la autenticación no es exitosa porque el legajo no es válido o el password es incorrecto
@@ -60,7 +60,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		try {
 
 			ResultSet rs = this.consulta("SELECT legajo FROM empleado WHERE legajo = " + Integer.parseInt(legajo) + " AND password=md5('" + password + "')");
-			//"SELECT legajo FROM empleado WHERE legajo = " + Integer.parseInt(legajo) + " AND password=md5('" + password + "'"
+			
 			if (rs.next()) { //Si hay resultados, entonces coincide legajo y password.
 				resul_autenticacion = true; //Resultó exitosa la autenticación
 				this.legajo = rs.getInt("legajo"); //seteo el legajo
@@ -92,7 +92,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 	public ArrayList<String> obtenerTiposDocumento() throws Exception {
 		logger.info("recupera los tipos de documentos.");
 		/** 
-		 * TODO Debe retornar una lista de strings con los tipos de documentos. 
+		 * TODO (hecho) Debe retornar una lista de strings con los tipos de documentos. 
 		 *      Deberia propagar una excepción si hay algún error en la consulta.
 		 */
 		
@@ -103,7 +103,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 			ResultSet rs = this.consulta("SELECT tipo_doc FROM cliente GROUP BY tipo_doc");
 
 			
-			while (rs.next()) { //Recorro lavista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
+			while (rs.next()) { //Recorro la vista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
 				
 				tipoNuevo=rs.getString("tipo_doc");
 
@@ -115,7 +115,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
 			logger.error("VendorError: " + ex.getErrorCode());
-			throw new Exception("Error al recuperar los tipos de documentos de los clientes de la BD.");
+			throw new Exception("Error al recuperar los tipos de documentos de los clientes en la BD.");
 		}
 		
 
@@ -129,7 +129,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		logger.info("Busca la tasa correspondiente a el monto {} con una cantidad de meses {}", monto, cantidadMeses);
 
 		/** 
-		 * TODO Debe buscar la tasa correspondiente según el monto y la cantidadMeses. 
+		 * TODO (hecho) Debe buscar la tasa correspondiente según el monto y la cantidadMeses. 
 		 *      Deberia propagar una excepción si hay algún error de conexión o 
 		 *      no encuentra el monto dentro del [monto_inf,monto_sup] y la cantidadMeses.
 		 */
@@ -184,7 +184,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		logger.info("recupera los períodos (cantidad de meses) según el monto {} para el prestamo.", monto);
 
 		/** 
-		 * TODO Debe buscar los períodos disponibles según el monto. 
+		 * TODO (hecho) Debe buscar los períodos disponibles según el monto. 
 		 *      Deberia propagar una excepción si hay algún error de conexión o 
 		 *      no encuentra el monto dentro del [monto_inf,monto_sup].
 		 */
@@ -204,7 +204,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 			}
 			
 			if(cantMeses.isEmpty()) {
-				throw new Exception("Error: No se encuentra un periodo para el monto dado en la BD.");
+				throw new Exception("Error:  En la BD, no se encuentra un periodo para el monto dado.");
 			}
 			rs.close();
 		} catch(SQLException ex) {
@@ -225,7 +225,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 		logger.info("Verifica si el cliente {} tiene algun prestamo que tienen cuotas por pagar.", nroCliente);
 
 		/** 
-		 * TODO Busca algún prestamo del cliente que tenga cuotas sin pagar (vigente) retornando el nro_prestamo
+		 * TODO (hecho) Busca algún prestamo del cliente que tenga cuotas sin pagar (vigente) retornando el nro_prestamo
 		 *      si no existe prestamo del cliente o todos están pagos retorna null.
 		 *      Si hay una excepción la propaga con un mensaje apropiado.
 		 */
