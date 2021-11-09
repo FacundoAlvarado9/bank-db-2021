@@ -100,7 +100,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		}
 
 		/** 
-		 * TODO Obtiene el saldo.
+		 * TODO (hecho) Obtiene el saldo.
 		 *      Debe capturar la excepción SQLException y propagar una Exception más amigable.
 		 */
 
@@ -109,8 +109,6 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		try {
 
 			ResultSet rs = this.consulta("SELECT * FROM caja_ahorro where nro_ca="+caja);
-
-			
 			
 			if(rs.next()) {
 				saldo = rs.getDouble("saldo"); //seteo el saldo
@@ -145,7 +143,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		 */
 		
 		
-		int cant=0;
+		int cant=1;
 		
 		ArrayList<TransaccionCajaAhorroBean> lista = new ArrayList<TransaccionCajaAhorroBean>();
 		TransaccionCajaAhorroBean filaNueva;
@@ -154,7 +152,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_cliente="+cliente+" OR nro_ca="+caja);
 
 			
-			while (rs.next() && cant<=cantidad) { //Recorro lavista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
+			while (rs.next() && cant<=cantidad) { //Recorro la vista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
 				filaNueva.setTransaccionFechaHora(Fechas.convertirStringADate(rs.getString("fecha"),rs.getString("hora")));
 				filaNueva.setTransaccionTipo(rs.getString("tipo"));
@@ -163,6 +161,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 				filaNueva.setCajaAhorroDestinoNumero(rs.getInt("destino"));
 				lista.add(filaNueva);
 				
+				cant++;
 			}
 			rs.close();
 		} catch(SQLException ex) {
@@ -268,7 +267,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		logger.info("Intenta realizar el parsing de un codigo de cuenta {}", p_cuenta);
 
 		/**
-		 * TODO Verifica que el codigo de la cuenta sea valido. 
+		 * TODO (Hecho) Verifica que el codigo de la cuenta sea valido. 
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 * 		Debe generar excepción si la cuenta es vacia, entero negativo o no puede generar el parsing.
 		 * retorna la cuenta en formato int
@@ -276,7 +275,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		
 		/*
 		 * Nada mas se ve que el dato venga bien de la interface de usuario
-		 * Solamente verificar que p_Cuenta no sea nulo ni menor a acero,
+		 * Solamente se verifica que p_Cuenta no sea nulo ni menor a acero,
 		 * (El cheqeo de que la caja de ahorro exista se va a hacer despues desde el store procedure)
 		 */
 		Integer cuenta;
