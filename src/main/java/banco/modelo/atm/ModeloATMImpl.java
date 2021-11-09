@@ -108,7 +108,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 
 		try {
 
-			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_ca="+caja);
+			ResultSet rs = this.consulta("SELECT * FROM caja_ahorro where nro_ca="+caja);
 
 			
 			

@@ -686,12 +686,4 @@ GRANT SELECT, UPDATE ON banco.tarjeta TO 'atm'@'%';
 #Conforme a la 2da parte del Proyecto 3
 GRANT EXECUTE ON PROCEDURE  banco.procedimiento_transferencia TO 'atm'@'%';
 GRANT EXECUTE ON PROCEDURE banco.procedimiento_extraccion TO 'atm'@'%';
-
-#Permisos mínimos necesarios para las stored procedures definidas anteriormente
-GRANT SELECT, UPDATE ON banco.caja_ahorro TO 'atm'@'%';
-GRANT SELECT ON banco.cliente_ca TO 'atm'@'%';
-
-GRANT INSERT ON banco.transaccion TO 'atm'@'%';
-GRANT INSERT ON banco.transaccion_por_caja TO 'atm'@'%';
-GRANT INSERT ON banco.transferencia TO 'atm'@'%';
-GRANT INSERT ON banco.extraccion TO 'atm'@'%';
+GRANT SELECT ON banco.caja_ahorro TO 'atm'@'%';
