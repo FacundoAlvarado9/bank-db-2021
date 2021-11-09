@@ -51,7 +51,7 @@ public class DAOClienteImpl implements DAOCliente {
 				cliente.setTelefono(rs.getString("telefono"));
 				cliente.setFechaNacimiento(rs.getDate("fecha_nac"));
 			}
-
+			rs.close();
 		} catch (SQLException ex){
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -97,6 +97,7 @@ public class DAOClienteImpl implements DAOCliente {
 				cliente.setFechaNacimiento(rs.getDate("fecha_nac"));
 			}
 
+			rs.close();
 		} catch (SQLException ex){
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

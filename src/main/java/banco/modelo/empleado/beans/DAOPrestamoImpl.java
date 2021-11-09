@@ -155,7 +155,7 @@ public class DAOPrestamoImpl implements DAOPrestamo {
 				
 			}
 
-
+			rs.close();
 		} catch (SQLException ex){
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

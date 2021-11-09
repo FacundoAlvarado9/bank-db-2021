@@ -77,7 +77,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 				this.caja = rs.getString("nro_ca"); //seteo el numero de caja
 				this.cliente = rs.getString("nro_cliente");//Seteo el numero de cliente
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -118,7 +118,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			}
 			
 			
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -164,7 +164,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 				lista.add(filaNueva);
 				
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -213,7 +213,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 				lista.add(filaNueva);
 				
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -249,7 +249,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 					throw new Exception(resultado);
 				}
 			}
-
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -341,7 +341,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 					throw new Exception(resultado);
 				}
 			}
-		
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

@@ -48,7 +48,8 @@ public class DAOPagoImpl implements DAOPago {
 				p.setFechaPago(rs.getDate("fecha_pago"));
 				lista.add(p);
 			}
-
+			
+			rs.close();
 		} catch (SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -103,7 +104,9 @@ public class DAOPagoImpl implements DAOPago {
 					}
 
 				}
+				rs.close();
 			}
+			
 		} catch(SQLException ex){
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

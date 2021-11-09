@@ -61,7 +61,7 @@ public class DAOClienteMorosoImpl implements DAOClienteMoroso {
 				moroso.setCantidadCuotasAtrasadas(rsNrosPrestamosMorosos.getInt("cuotas_atrasadas"));
 				morosos.add(moroso);
 			}
-			
+			rsNrosPrestamosMorosos.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

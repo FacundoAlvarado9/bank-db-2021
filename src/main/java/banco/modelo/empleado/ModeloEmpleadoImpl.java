@@ -65,7 +65,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 				resul_autenticacion = true; //Resultó exitosa la autenticación
 				this.legajo = rs.getInt("legajo"); //seteo el legajo
 			}
-
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -110,7 +110,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 				tipos.add(tipoNuevo);
 				
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -148,7 +148,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 			}else {
 				throw new Exception("El monto no se corresponde con una cantidad de meses valida en la BD.");
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -206,7 +206,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 			if(cantMeses.isEmpty()) {
 				throw new Exception("Error: No se encuentra un periodo para el monto dado en la BD.");
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
@@ -242,7 +242,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 				nro_prestamo=rs.getInt("nro_prestamo");
 				
 			}
-			
+			rs.close();
 		} catch(SQLException ex) {
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());

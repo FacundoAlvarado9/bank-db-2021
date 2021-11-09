@@ -58,7 +58,7 @@ public class DAOEmpleadoImpl implements DAOEmpleado {
 
 			}
 
-
+			rs.close();
 		} catch (SQLException ex){
 			logger.error("SQLException: " + ex.getMessage());
 			logger.error("SQLState: " + ex.getSQLState());
