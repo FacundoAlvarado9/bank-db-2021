@@ -68,7 +68,7 @@ public class DAOClienteImpl implements DAOCliente {
 		logger.info("recupera el cliente por nro de cliente.");
 		
 		/**
-		 * TODO Recuperar el cliente que tenga un número de cliente de acuerdo al parámetro recibido.  
+		 * TODO (hecho) Recuperar el cliente que tenga un número de cliente de acuerdo al parámetro recibido.  
 		 *		Deberá generar o propagar una excepción si no existe dicho cliente o hay un error de conexión.		
 		 */
 
@@ -83,10 +83,11 @@ public class DAOClienteImpl implements DAOCliente {
 			Statement select = conexion.createStatement();
 			ResultSet rs = select.executeQuery(sql);
 
-			while(rs.next()){
+			if(rs.next()){
 
 				logger.info("Se recuperó cliente que coincide.");
 
+				
 				cliente.setNroCliente(rs.getInt("nro_cliente"));
 				cliente.setApellido(rs.getString("apellido"));
 				cliente.setNombre(rs.getString("nombre"));
@@ -95,6 +96,9 @@ public class DAOClienteImpl implements DAOCliente {
 				cliente.setDireccion(rs.getString("direccion"));
 				cliente.setTelefono(rs.getString("telefono"));
 				cliente.setFechaNacimiento(rs.getDate("fecha_nac"));
+			
+			}else {
+				throw new Exception("Error: El cliente solicitado no se encuentra en la B.D.");
 			}
 
 			rs.close();
