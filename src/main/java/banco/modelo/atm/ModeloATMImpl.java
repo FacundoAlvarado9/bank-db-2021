@@ -240,11 +240,12 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		String resultado;
 		System.out.println("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
 		PreparedStatement update = conexion.prepareCall("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
-
+		double saldo=-1;
 		try {
 			rs=update.executeQuery();
 			if(rs.next()) {
-				resultado=rs.getString("resultado");
+				saldo=this.obtenerSaldo();
+				resultado=rs.getString("resultado")+"Su saldo actual es: $"+saldo;
 				if (!resultado.equals(ModeloATM.EXTRACCION_EXITOSA)) {
 					throw new Exception(resultado);
 				}
@@ -257,7 +258,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			throw new Exception("Error al realizar extraccion.");
 		}
 
-		return this.obtenerSaldo();
+		return saldo;
 	}
 
 	
