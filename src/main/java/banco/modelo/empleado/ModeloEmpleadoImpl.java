@@ -61,7 +61,7 @@ public class ModeloEmpleadoImpl extends ModeloImpl implements ModeloEmpleado {
 
 			ResultSet rs = this.consulta("SELECT legajo FROM empleado WHERE legajo = " + Integer.parseInt(legajo) + " AND password=md5('" + password + "')");
 			//"SELECT legajo FROM empleado WHERE legajo = " + Integer.parseInt(legajo) + " AND password=md5('" + password + "'"
-			while (rs.next()) { //Si hay resultados, entonces coincide legajo y password.
+			if (rs.next()) { //Si hay resultados, entonces coincide legajo y password.
 				resul_autenticacion = true; //Resultó exitosa la autenticación
 				this.legajo = rs.getInt("legajo"); //seteo el legajo
 			}
