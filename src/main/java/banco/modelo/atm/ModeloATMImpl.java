@@ -138,7 +138,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		logger.info("Busca las ultimas {} transacciones en la BD de la tarjeta {}",cantidad, Integer.valueOf(this.tarjeta.trim()));
 
 		/**
-		 * TODO Deberá recuperar los ultimos movimientos del cliente, la cantidad está definida en el parámetro.
+		 * TODO (hecho) Deberá recuperar los ultimos movimientos del cliente, la cantidad está definida en el parámetro.
 		 * 		Debe capturar la excepción SQLException y propagar una Exception más amigable. 
 		 */
 		
@@ -193,6 +193,10 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		//Valido las fechas y las convierto a un formato que entienda SQL.
 		fechaIni=Fechas.convertirDateAStringDB(desde);
 		fechaFin=Fechas.convertirDateAStringDB(hasta);
+		
+		if(fechaIni==null || fechaFin==null) {
+			throw new Exception("Error: alguna de las fechas ingresadas no es valida");
+		}
 		
 		ArrayList<TransaccionCajaAhorroBean> lista = new ArrayList<TransaccionCajaAhorroBean>();
 		
