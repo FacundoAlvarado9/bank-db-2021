@@ -256,7 +256,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			rs=update.executeQuery();
 			if(rs.next()) {
 				saldo=this.obtenerSaldo();
-				resultado=rs.getString("resultado")+",Su saldo actual es: $"+saldo;
+				resultado=rs.getString("resultado");
 				if (!resultado.equals(ModeloATM.EXTRACCION_EXITOSA)) {
 					throw new Exception(resultado);
 				}
