@@ -553,13 +553,20 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 						UPDATE caja_ahorro SET saldo = saldo + monto WHERE nro_ca=nro_ca_destino;
 						SELECT 'Transferencia Exitosa' AS resultado;
 
-						#Inserto la nueva transaccion en la base de datos
+						#Inserto la nueva transaccion correspondientes a la transferencia en la base de datos
 						INSERT INTO transaccion VALUES(NULL,CURDATE(),CURTIME(),monto);
 
 						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
 
 						INSERT INTO transferencia VALUES(LAST_INSERT_ID(),nro_liente,nro_ca_origen,nro_ca_destino);
+						
+						#Inserto la nueva transaccion correspondientes al deposito en la base de datos
+						INSERT INTO transaccion VALUES(NULL,CURDATE(),CURTIME(),monto);
 
+						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
+						
+						INSERT INTO deposito VALUES(LAST_INSERT_ID(),nro_ca_destino);
+								
 					ELSE
 						SELECT 'Saldo insuficiente para realizar la transferencia' AS resultado;
 					END IF;
