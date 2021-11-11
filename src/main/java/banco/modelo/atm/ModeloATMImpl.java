@@ -249,7 +249,6 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		
 		ResultSet rs;
 		String resultado;
-		System.out.println("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
 		PreparedStatement update = conexion.prepareCall("CALL procedimiento_extraccion("+cliente+","+codigoATM+","+caja+","+monto+")");
 		double saldo=-1;
 		try {
