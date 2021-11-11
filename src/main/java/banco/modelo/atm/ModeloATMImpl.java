@@ -112,7 +112,6 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 			
 			if(rs.next()) {
 				saldo = rs.getDouble("saldo"); //seteo el saldo
-				System.out.println("saldo: "+saldo);
 			}
 			
 			
@@ -293,7 +292,6 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		
 		if (isNumeric(p_cuenta) == true) {//Verifico que el string sea un numero
 			cuenta = Integer.parseInt(p_cuenta);
-            System.out.println("Numero: " + p_cuenta);
         } else {
         	throw new Exception("Error: El numero de cuenta ingresado no es un numero");
         }
@@ -301,9 +299,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		if(cuenta<=0) {
 			throw new Exception("Error: El numero de cuenta no puede ser menor o igual a cero");
 		}
-		
-		
-		//logger.info("Encontró la cuenta en la BD.");
+
         return cuenta;
 	}	
 	
