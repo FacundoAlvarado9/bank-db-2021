@@ -595,7 +595,8 @@ CREATE PROCEDURE procedimiento_extraccion(IN nro_cliente_ext INT, IN cod_ATM INT
             END;
 
         START TRANSACTION;
-            IF EXISTS (SELECT * FROM caja_ahorro NATURAL JOIN cliente_ca WHERE nro_ca=nro_ca_ahorro_a_extraer AND nro_cliente=nro_cliente_ext) THEN
+            IF EXISTS (SELECT * FROM caja_ahorro NATURAL JOIN cliente_ca WHERE nro_ca=nro_ca_ahorro_a_extraer AND nro_cliente=nro_cliente_ext)
+                AND EXISTS (SELECT * FROM caja WHERE cod_caja=cod_ATM) THEN
 
                 #Guardo el saldo original y hago bloqueo de la caja de ahorropara update
                 SELECT saldo INTO saldo_original FROM caja_ahorro WHERE nro_ca = nro_ca_ahorro_a_extraer FOR UPDATE;
