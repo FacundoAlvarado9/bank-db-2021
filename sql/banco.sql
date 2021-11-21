@@ -170,7 +170,7 @@ CREATE TABLE plazo_cliente(
 CREATE TABLE prestamo(
 	nro_prestamo INT UNSIGNED NOT NULL AUTO_INCREMENT,
 	fecha DATE NOT NULL,
-	cant_meses TINYINT UNSIGNED NOT NULL CHECK(cant_meses < 13 AND cant_meses > 0),
+	cant_meses TINYINT UNSIGNED NOT NULL,
 	monto DECIMAL(10,2) UNSIGNED NOT NULL CHECK(monto >= 0),
 	tasa_interes DECIMAL(4,2)  UNSIGNED NOT NULL CHECK(tasa_interes >= 0),
 	interes DECIMAL(9,2) UNSIGNED NOT NULL CHECK(interes >= 0),
