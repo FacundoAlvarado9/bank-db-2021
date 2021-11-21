@@ -148,7 +148,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		TransaccionCajaAhorroBean filaNueva;
 		try {
 
-			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_cliente="+cliente+" OR nro_ca="+caja+" ORDER BY fecha DESC,hora DESC LIMIT 0,15");
+			ResultSet rs = this.consulta("SELECT fecha, hora, tipo, IF(tipo='deposito', monto, (-1)*monto) as monto, cod_caja, destino FROM trans_cajas_ahorro where nro_cliente="+cliente+" OR nro_ca="+caja+" ORDER BY fecha DESC,hora DESC LIMIT 0,15");
 			
 			while (rs.next() && cant<=cantidad) { //Recorro la vista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
@@ -201,7 +201,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		TransaccionCajaAhorroBean filaNueva;
 		try {
 			//Obtengp todas los movimientos del cliente entre ambas fechas
-			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro  WHERE (nro_cliente="+cliente+" or nro_ca="+caja+") and fecha>='"+fechaIni+"' AND fecha<='"+fechaFin+"'");
+			ResultSet rs = this.consulta("SELECT fecha, hora, tipo, IF(tipo='deposito', monto, (-1)*monto) as monto, cod_caja, destino FROM trans_cajas_ahorro  WHERE (nro_cliente="+cliente+" or nro_ca="+caja+") and fecha>='"+fechaIni+"' AND fecha<='"+fechaFin+"'");
 			
 			while (rs.next()) { //Recorro las filas obtenidas de la vista trans_caja_Ahorro recuperando todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
