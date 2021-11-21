@@ -511,6 +511,8 @@ CREATE VIEW transferencia_caja_ahorro AS
 	SELECT ca_datos_cli.nro_ca, ca_datos_cli.saldo, transferencia.nro_trans, transaccion_datos_nro_caja.fecha, transaccion_datos_nro_caja.hora, 'transferencia' as tipo,
 		transaccion_datos_nro_caja.monto, transaccion_datos_nro_caja.cod_caja, ca_datos_cli.nro_cliente, ca_datos_cli.tipo_doc,
 		ca_datos_cli.nro_doc, ca_datos_cli.nombre, ca_datos_cli.apellido, transferencia.destino
+    #Para las cajas de ahorro con más de un "dueño" incluía en nro_cliente a ambos
+    #Ahora solamente incluye, como debe ser, al que realizó la transferencia
 	FROM (transferencia JOIN ca_datos_cli ON (transferencia.origen = ca_datos_cli.nro_ca AND transferencia.nro_cliente = ca_datos_cli.nro_cliente)) JOIN transaccion_datos_nro_caja ON transferencia.nro_trans = transaccion_datos_nro_caja.nro_trans;
 
 
@@ -559,14 +561,14 @@ CREATE PROCEDURE procedimiento_transferencia(IN nro_liente BIGINT, IN cod_ATM ME
 						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
 
 						INSERT INTO transferencia VALUES(LAST_INSERT_ID(),nro_liente,nro_ca_origen,nro_ca_destino);
-						
+
 						#Inserto la nueva transaccion correspondientes al deposito en la base de datos
 						INSERT INTO transaccion VALUES(NULL,CURDATE(),CURTIME(),monto);
 
 						INSERT INTO transaccion_por_caja VALUES(LAST_INSERT_ID(),cod_ATM);
-						
+
 						INSERT INTO deposito VALUES(LAST_INSERT_ID(),nro_ca_destino);
-								
+
 					ELSE
 						SELECT 'Saldo insuficiente para realizar la transferencia' AS resultado;
 					END IF;
