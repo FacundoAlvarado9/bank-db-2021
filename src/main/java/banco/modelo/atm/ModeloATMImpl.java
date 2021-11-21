@@ -201,8 +201,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		TransaccionCajaAhorroBean filaNueva;
 		try {
 			//Obtengp todas los movimientos del cliente entre ambas fechas
-			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro  WHERE (nro_cliente="+cliente+" or nro_ca="+caja+") and TIMEDIFF('"+fechaFin+"',fecha)>'00-00-00' AND TIMEDIFF('"+fechaIni+"',fecha)<0");
-
+			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro  WHERE (nro_cliente="+cliente+" or nro_ca="+caja+") and fecha>='"+fechaIni+"' AND fecha<='"+fechaFin+"'");
 			
 			while (rs.next()) { //Recorro las filas obtenidas de la vista trans_caja_Ahorro recuperando todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
