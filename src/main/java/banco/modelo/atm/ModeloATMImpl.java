@@ -148,8 +148,7 @@ public class ModeloATMImpl extends ModeloImpl implements ModeloATM {
 		TransaccionCajaAhorroBean filaNueva;
 		try {
 
-			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_cliente="+cliente+" OR nro_ca="+caja);
-
+			ResultSet rs = this.consulta("SELECT * FROM trans_cajas_ahorro where nro_cliente="+cliente+" OR nro_ca="+caja+" ORDER BY fecha DESC,hora DESC LIMIT 0,15");
 			
 			while (rs.next() && cant<=cantidad) { //Recorro la vista trans_caja_Ahorro obteniendo todos los valores necesarios para cada fila
 				filaNueva = new TransaccionCajaAhorroBeanImpl();
