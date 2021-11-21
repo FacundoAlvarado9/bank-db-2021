@@ -39,7 +39,7 @@ public class DAOClienteMorosoImpl implements DAOClienteMoroso {
 		 *      si hay algún error que necesita ser informado al usuario. 
 		 */
 		
-		String sql_nros_prestamos="SELECT nro_prestamo, COUNT(nro_prestamo) AS cuotas_atrasadas FROM prestamo NATURAL JOIN pago WHERE TIMEDIFF(CURDATE(),fecha_venc)>0 AND fecha_pago IS NULL GROUP BY nro_prestamo";
+		String sql_nros_prestamos="SELECT nro_prestamo, COUNT(nro_prestamo) AS cuotas_atrasadas FROM prestamo NATURAL JOIN pago WHERE TIMEDIFF(CURDATE(),fecha_venc)>0 AND fecha_pago IS NULL GROUP BY nro_prestamo HAVING(cuotas_atrasadas>=2)";
 		
 		ArrayList<ClienteMorosoBean> morosos = new ArrayList<ClienteMorosoBean>();
 		ClienteMorosoBean moroso;
