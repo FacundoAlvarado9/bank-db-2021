@@ -7254,3 +7254,315 @@ Saliendo de la aplicación.
 Se desconecta la conexión a la BD.
 Se intenta cerrar la conexión activa
 Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 101, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 101 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 101 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Empleado
+Intenta ingresar como Empleado con legajo 1, password 1
+Recupera el usuario de BD para Empleado
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario Empleado
+usuario empleado, password empleado
+Se crea el modelo Empleado.
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=empleado, pass=empleado
+Se establece la conexión con la BD
+Se intenta autenticar el legajo 1 con password 1
+Se intenta realizar la siguiente consulta SELECT legajo FROM empleado WHERE legajo = 1 AND password=md5('1')
+Empleado 1 autenticado
+Inicializacion de la ventana del Empleado
+Se registran los listeners.
+Se crea el controlador del Empleado.
+Transfiere el control al nuevo controlador
+Solicita al DAO un empleado con legajo 1
+recupera el empleado que corresponde al legajo 1.
+sql: SELECT * FROM empleado WHERE legajo=1
+Se recuperó un prestamo que coincide.
+Se registra al empleado Jones, Indiana con legajo 1
+recupera los tipos de documentos.
+Se intenta realizar la siguiente consulta SELECT tipo_doc FROM cliente GROUP BY tipo_doc
+Carga el combo con los 3 tipos de documento recuperados
+muestra la ventana
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de transferencia
+Muestra el panel de lista de clientes morosos
+Modelo solicita al DAO que busque los clientes morosos
+Busca los clientes morosos.
+Recupera el prestamo nro 1.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 1
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 42
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 2.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 2
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 41
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 4.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 4
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 39
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 5.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 5
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 38
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 6.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 6
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 37
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 7.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 7
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 36
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 8.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 8
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 35
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 9.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 9
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 34
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 10.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 10
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 33
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 11.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 11
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 32
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 13.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 13
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 30
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 14.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 14
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 29
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 15.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 15
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 28
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 16.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 16
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 27
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 17.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 17
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 26
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 18.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 18
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 25
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 19.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 19
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 24
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 20.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 20
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 23
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 21.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 21
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 22
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 22.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 22
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 21
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 23.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 23
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 20
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 24.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 24
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 19
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 25.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 25
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 18
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 26.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 26
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 17
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 27.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 27
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 16
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 28.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 28
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 15
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 29.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 29
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 14
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 30.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 30
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 13
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 31.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 31
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 12
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 32.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 32
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 11
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 33.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 33
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 10
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 36.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 36
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 7
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 37.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 37
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 6
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 38.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 38
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 5
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 40.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 40
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 3
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 41.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 41
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 2
+Se recuperó cliente que coincide.
+Recupera el prestamo nro 42.
+sql: SELECT * FROM prestamo WHERE nro_prestamo = 42
+Se recuperó un prestamo que coincide.
+recupera el cliente por nro de cliente.
+sql: SELECT * FROM cliente WHERE nro_cliente = 1
+Se recuperó cliente que coincide.
+Muestra una lista con 37 clientes morosos
+Saliendo de la aplicación.
+Se desconecta la conexión a la BD.
+Se intenta cerrar la conexión activa
+Eliminación de la ventana.
