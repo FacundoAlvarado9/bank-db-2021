@@ -39,7 +39,7 @@ CREATE TABLE sucursal(
 	nombre VARCHAR(20) NOT NULL,
 	direccion VARCHAR(20) NOT NULL,
 	telefono VARCHAR(20) NOT NULL,
-	horario VARCHAR(20) NOT NULL,
+	horario VARCHAR(30) NOT NULL,
 	cod_postal SMALLINT UNSIGNED NOT NULL,
 	
 	CONSTRAINT primary_key_sucursal
