@@ -10024,3 +10024,103 @@ Consulta al modelo por el saldo del cliente
 Se intenta obtener el saldo de cliente 3
 Se intenta realizar la siguiente consulta SELECT * FROM caja_ahorro where nro_ca=1
 Muestra el saldo del cliente
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Se incia la aplicación
+Creación de la ventana de login
+Se registran los listeners.
+Se inicia la carga de parametros para conectar con la BD.
+Recuperación de los datos para la conexión con la BD
+Se intenta leer el archivo de propiedades cfg/conexionBD.properties
+se cargó exitosamente
+Parámetros de conexión: jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+Se inicializa la ventana de login.
+se registra el controlador.
+se muestra la ventana.
+se carga el combo con los usuarios.
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 103, PIN [2, 1, 3]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 103 con pin 213
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 103 AND pin=md5(213)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [2, 1, 6]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin 216
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(216)
+Hubo un error en la autenticación.
+Crea una ventana modal informando: El usuario o contraseña ingresados son incorrectos..
+Intenta ingresar como Cliente
+Intenta ingresar como Cliente a un ATM, tarjeta 1, PIN [1]
+Recupera el usuario de BD para Cliente
+Ingresa a recuperar el usuarioBD y passwordBD para acceder a la BD del usuario ATM
+usuario atm, password atm
+Se crea el modelo ATM.
+Recuperación de la información sobre el cajero
+Se intenta leer el archivo de propiedades cfg/config.properties
+Código cajero ATM: 100
+Parametros de conexion: url= jdbc:mysql://localhost:3306/banco?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires, user=atm, pass=atm
+Se establece la conexión con la BD
+Se intenta autenticar la tarjeta 1 con pin 1
+Se intenta realizar la siguiente consulta SELECT nro_tarjeta,nro_cliente,nro_ca FROM tarjeta WHERE  nro_tarjeta= 1 AND pin=md5(1)
+Usuario Cliente autenticado
+Se crea la ventana de ATM
+Ingresa a crear el panel para consulta de saldo
+Ingresa a crear el panel para Extracción
+Ingresa a crear el panel para Transferencias
+Ingresa a crear el panel para consulta de Ultimos Movimientos
+Ingresa a crear el panel para consulta de Movimientos Por Períodos
+Se registran los listeners.
+Se inicializa los listeners del menu de opciones
+Se inicializa los listeners de los botones de las operaciones
+Se crea el controlador ATM.
+Transfiere el control al nuevo controlador
+Informa a la vista que puede eliminar la ventana de login.
+Eliminación de la ventana de login.
+Ejecuta el listener de consulta de saldo
+Muestra el panel de consulta de saldo
+Consulta al modelo por el saldo del cliente
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM caja_ahorro where nro_ca=14
+Muestra el saldo del cliente
+Ejecuta el listener de extracción
+Muestra el panel de extracción
+Ejecuta el listener de realizar una extracción
+Controlador solicita al modelo realizar la extracción
+Se solicita al modelo validar y parse del monto
+Intenta realizar el parsing del monto 12
+Se solicita al usuario la confirmación la extracción
+Selecciono la opcion 0
+Realiza la extraccion de $12.0 sobre la cuenta
+Se intenta obtener el saldo de cliente 3
+Se intenta realizar la siguiente consulta SELECT * FROM caja_ahorro where nro_ca=14
+Se produjo una excepción al realizar la extracción
+Crea una ventana modal informando sobre el mensaje.
