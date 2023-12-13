@@ -1,3 +1,27 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5940521&assignment_repo_type=AssignmentRepo)
 # Banco
- Proyecto de banco con MVC
+
+Projekt für die Datenbanken Vorlesung an der Univeridad Nacional del Sur in Argentinien. Dieser ist der dritte Teil der Projekt, der aus drei Teilen bestand. In den ersten zwei Phasen haben wir die DB-Table erstellt und die Testdaten erzeugt.
+
+## Die Datenbank
+In der Datei [banco.sql](/sql/banco.sql) wurde die DB erstellt, die dem folgenden Diagramm entspricht:
+
+![Diagramm](/doc/diagramm.png)
+
+Die Testdaten finden Sie in der [Datei](/sql/datos.sql)
+
+## Testen Sie das Projekt
+
+Wir haben mit MySQL gearbeitet. Man kann auf jeden Fall das DB-System in der [Configuration-Datei](/cfg/conexionBD.properties) ändern.
+
+Nach der Zugang in MySQL sollten Sie die DB erstellen:
+
+`mysql> source /path/to/the/project/sql/banco.sql`
+
+Dann die Testdaten:
+
+`mysql> source /path/to/the/project/sql/datos.sql`
+
+Wenn alles OK ist, dann können Sie das Projekt compilieren und testen. Testdaten für das Login sind:
+
+- Numero de tarjeta: 1
+- Passwort: 1
